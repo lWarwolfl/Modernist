@@ -34,6 +34,7 @@
 }
 .top-nav{
     float: left;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +45,7 @@
     display: inline-block;
     font-family: var(--font);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     white-space: nowrap;
     color: var(--font-color);
     background-color: transparent;
@@ -55,7 +56,7 @@
 .top-nav-link:hover{
     margin: 0 10px;
     padding: 10px;
-    background-color: #222222;
+    background-color: var(--top-nav-link-color);
     box-shadow: 0 2px 4px var(--box-shadow-color);
 }
 .sign-button{
@@ -68,20 +69,59 @@
     margin: 10px 0 10px 10px;
     font-family: var(--font);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     color: var(--font-color);
     background-image: var(--gradient);
     background-size: 200% 200%;
     background-position: 50% 100%;
     box-shadow: 0 2px 4px var(--box-shadow-color);
-    opacity: 1;
 }
 .sign-button:hover{
     box-shadow: 0 8px 10px var(--box-shadow-color);
     background-position: 135% 100%;
 }
-.sign-button .material-icons-outlined{
-    font-size: 16px;
+body .material-icons-outlined{
+    font-size: 17px;
     vertical-align: text-bottom;
+}
+.top-search-bar{
+    position: absolute;
+    display: inline-block;
+    right: calc(50% - 280px);
+    width: 0;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+    transition: 0.35s;
+}
+.top-search-bar:hover{
+    box-shadow: 0 8px 10px var(--box-shadow-color);
+}
+.top-search-input{
+    height: 100%;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    font-family: var(--font);
+    font-size: 13px;
+    color: var(--font-color);
+    background-color: var(--search-box-color);
+}
+.top-search-input:hover{
+    background-color: var(--search-box-hover-color);
+}
+.top-search-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--font-color);
+    font-size: 20px;
 }
