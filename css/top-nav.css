@@ -1,4 +1,5 @@
 .top-nav-box{
+    position: relative;
     display: block;
     width: 100%;
     height: 60px;
@@ -78,7 +79,7 @@
     box-shadow: 0 2px 4px var(--box-shadow-color);
 }
 .sign-button:hover{
-    box-shadow: 0 8px 10px var(--box-shadow-color);
+    box-shadow: 0 4px 6px var(--box-shadow-color);
     background-position: 135% 100%;
 }
 body .material-icons-outlined{
@@ -97,7 +98,7 @@ body .material-icons-outlined{
     transition: 0.35s;
 }
 .top-search-bar:hover{
-    box-shadow: 0 8px 10px var(--box-shadow-color);
+    box-shadow: 0 4px 6px var(--box-shadow-color);
 }
 .top-search-input{
     height: 100%;

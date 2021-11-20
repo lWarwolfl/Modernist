@@ -21,9 +21,34 @@ input:focus,button:focus{
     border: none;
 }
 .screen-fix{
+    position: absolute;
+    display: flex;
     width: 1100px;
     margin: 0 calc(50% - 550px);
     height: 100%;
+    z-index: 2000;
+}
+.screen-fix.row{
+    flex-direction: row;
+}
+.screen-fix.column{
+    flex-direction: column;
+}
+.screen-fix.column.left{
+    align-items: flex-start;
+    justify-content: center;
+}
+.screen-fix.column.center{
+    align-items: center;
+    justify-content: center;
+}
+.screen-fix.row.left{
+    align-items: center;
+    justify-content: left;
+}
+.screen-fix.row.center{
+    align-items: center;
+    justify-content: center;
 }
 .image-overlay{
     position: absolute;
@@ -32,8 +57,32 @@ input:focus,button:focus{
     width: 100%;
     height: 100%;
     background-color: var(--image-overlay-color);
-    opacity: 50%;
-    backdrop-filter: blur(5px);
+    opacity: 60%;
     border-radius: inherit;
     z-index: 1000;
+}
+.button{
+    display: inline-block;
+    height: 40px;
+    margin-top: 15px;
+    line-height: 40px;
+    border-radius: 7px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: var(--font-color);
+    background-image: var(--gradient);
+    background-size: 200% 200%;
+    background-position: 50% 100%;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+}
+.button:hover{
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+    background-position: 150% 100%;
+}
+.title-border{
+    width: 60px;
+    height: 0;
+    border-bottom: 3px solid var(--yellow);
 }

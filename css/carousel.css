@@ -1,0 +1,32 @@
+.carousel-box{
+    position: relative;
+    width: 100%;
+    height:800px;
+    background-color: transparent;
+}
+.carousel-box-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    color: var(--hero-font-color);
+}
+.carousel-box-button{
+    align-self: center;
+    margin-top: 30px;
+    width: 120px;
+}
+.carousel-box-blob{
+    position: absolute;
+    left: calc(50% - 600px);
+    top: calc(50% - 250px);
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../image/carousel-blob.svg");
+}

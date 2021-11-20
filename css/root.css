@@ -5,12 +5,15 @@
     --orange: #FE7E00;
     --body-color: #222222;
     --box-shadow-color: #222222;
+    --font-color: #ffffff;
+    --hero-font-color: #ffffff;
     --image-overlay-color: #222222;
+    --top-nav-color: #323232;
     --top-nav-link-color: #222222;
     --search-box-color: #222222;
     --search-box-hover-color: #292929;
-    --hero-font-color: #ffffff;
+    --card-color: #ffffff;
     --card-font-color: #222222;
-    --font-color: #ffffff;
-    --top-nav-color: #323232;
+    --tag-fill-color: #ECEBEB;
+    --tag-border-color: #1F1F1F;
 }
