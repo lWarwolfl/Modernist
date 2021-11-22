@@ -1,7 +1,7 @@
 .carousel-box{
     position: relative;
     width: 100%;
-    height:800px;
+    height:950px;
     background-color: transparent;
 }
 .carousel-box-title{
@@ -10,8 +10,8 @@
     line-height: 50px;
     margin-bottom: 20px;
     font-family: var(--font);
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 32px;
     text-align: left;
     color: var(--hero-font-color);
 }
@@ -29,4 +29,22 @@
     background-size: cover;
     background-position: center;
     background-image: url("../image/carousel-blob.svg");
+}
+body .splide__slider{
+    padding: 0;
+}
+body .splide__track{
+    padding: 40px 0;
+}
+body .splide__arrow--prev{
+    left: -40px;
+}
+body .splide__arrow--next{
+    right: -40px;
+}
+body .splide__pagination__page{
+    background-color: var(--yellow);
+}
+body .splide__pagination__page.is-active{
+    background-color: var(--orange);
 }
