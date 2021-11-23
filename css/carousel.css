@@ -1,8 +1,29 @@
 .carousel-box{
     position: relative;
     width: 100%;
-    height:950px;
     background-color: transparent;
+}
+.carousel-box.article{
+    height:1000px;
+}
+#team_slide{
+    margin-top: 50px;
+}
+.carousel-box.team{
+    height:700px;
+}
+.carousel-box-container{
+    position: relative;
+    width: 100%;
+    height:220px;
+    border-radius: 20px;
+    padding: 0 40px;
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+    backdrop-filter: blur(5px);
+    background-color: var(--carousel-box-color);
+}
+.carousel-box-container:hover{
+    box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
 .carousel-box-title{
     width: 100%;
@@ -20,15 +41,29 @@
     margin-top: 30px;
     width: 120px;
 }
-.carousel-box-blob{
+.carousel-box-circle{
     position: absolute;
     left: calc(50% - 600px);
-    top: calc(50% - 250px);
+    top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: var(--gradient);
+    z-index: -100;
+}
+.carousel-box-circle-2{
+    position: absolute;
+    right: calc(50% - 600px);
+    top: 100px;
     width: 600px;
     height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../image/carousel-blob.svg");
+    border-radius: 300px;
+    background-image: var(--gradient);
+}
+.carousel-box-circle-2.team{
+    width: 450px;
+    height: 450px;
+    right: calc(50% - 225px);
 }
 body .splide__slider{
     padding: 0;
@@ -42,9 +77,21 @@ body .splide__arrow--prev{
 body .splide__arrow--next{
     right: -40px;
 }
+body #team_slide .splide__arrow--prev{
+    left: 0;
+}
+body #team_slide .splide__arrow--next{
+    right: 0;
+}
 body .splide__pagination__page{
     background-color: var(--yellow);
 }
 body .splide__pagination__page.is-active{
     background-color: var(--orange);
+}
+body .splide__arrow{
+    background-color: var(--orange);
+}
+body .splide__arrow:hover{
+    background-color: var(--yellow);
 }

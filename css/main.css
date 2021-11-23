@@ -12,11 +12,6 @@ body{
     width: 100%;
     height: min-content;
 }
-.main.alternate1{
-    width: calc(100% - 40px);
-    height: min-content;
-    margin: 20px 20px;
-}
 a{
     text-decoration: none;
     color: inherit;

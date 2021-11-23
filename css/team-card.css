@@ -1,0 +1,73 @@
+body .team-card{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin-right: 100px;
+    background-color: var(--card-color);
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+    backdrop-filter: blur(5px);
+}
+body .team-card:hover{
+    box-shadow: 0 4px 6px -1px var(--box-shadow-color);
+}
+.team-card-image{
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+}
+.team-card-description{
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--card-font-color);
+}
+.team-card-name{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--card-font-color);
+}
+.team-card-job{
+    margin-top: 5px;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--card-font-color);
+}
+.team-card-stars{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-family: var(--font);
+    font-weight: 400;
+}
+.team-card-stars .material-icons-round{
+    font-size: 20px;
+    vertical-align: text-bottom;
+    color: var(--yellow);
+    margin: 0 5px;
+}

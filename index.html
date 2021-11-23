@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/hero-box.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/article-card.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/team-card.css">
 
     <!--slider-->
     <link rel="stylesheet" href="splide/css/splide.min.css">
@@ -34,7 +36,7 @@
 </head>
 <body>
 <div class="main">
-    <div class="hero-box">
+    <div id="author" class="hero-box">
         <div class="screen-fix center column">
             <div class="top-nav-box">
                 <a href="#" class="top-logo-box">
@@ -44,9 +46,9 @@
 
                 <div class="top-nav">
                     <a class="top-nav-link" href="#">Home</a>
-                    <a class="top-nav-link" href="#">About us</a>
-                    <a class="top-nav-link" href="#">Articles</a>
-                    <a class="top-nav-link" href="#">Become an author</a>
+                    <a class="top-nav-link" href="#about">About us</a>
+                    <a class="top-nav-link" href="#articles">Articles</a>
+                    <a class="top-nav-link" href="#author">Become an author</a>
                     <a class="top-nav-link" href="#">Contact us</a>
                     <a id="top-search-expand" class="top-nav-link" href="#" onclick="expand_search()"><span class="material-icons-outlined">search</span></a>
                     <form id="top-search-bar" class="top-search-bar">
@@ -113,12 +115,18 @@
         </div>
     </div>
 
-    <div class="carousel-box">
+    <div id="articles" class="carousel-box article">
+        <div class="carousel-box-circle"></div>
+        <div class="carousel-box-circle-2"></div>
         <div class="screen-fix left column">
-            <div class="title-border-yellow"></div>
-            <div class="carousel-box-title">Popular <span class="yellow-text">articles</span></div>
-            <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
-            <div class="splide">
+            <div class="carousel-box-container">
+                <div class="screen-fix left column">
+                    <div class="title-border-yellow"></div>
+                    <div class="carousel-box-title">Popular <span class="yellow-text">articles</span></div>
+                    <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
+                </div>
+            </div>
+            <div id="article_slide" class="splide">
                 <div class="splide__slider">
                     <div class="splide__track">
                         <ul class="splide__list">
@@ -174,6 +182,19 @@
                                 <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
                                 <div class="article-image" style="background-image: url('image/article-4.jpg')"></div>
                             </li>
+                            <li class="article-card splide__slide">
+                                <div class="tag-box">Article</div>
+                                <div class="time-description">10 min read - April 5, 2021</div>
+                                <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
+                                <div class="writer-box">
+                                    <div class="writer-image" style="background-image: url('image/people-5.jpg')"></div>
+                                    <div class="writer-name">Chris Roberts</div><br>
+                                    <div class="writer-job">Artist</div>
+                                </div>
+                                <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
+                                <div class="article-image" style="background-image: url('image/article-5.jpg')"></div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -181,17 +202,134 @@
             <a href="#" class="button carousel-box-button">SEE MORE</a>
         </div>
     </div>
+
+    <div id="about" class="about-us-box">
+        <div class="screen-fix center column">
+            <div class="about-us-box-container">
+                <div class="about-us-box-image-container"></div>
+
+                <div class="about-us-box-text-container">
+                    <div class="title-border-orange"></div>
+                    <div class="about-us-box-title">Want to know more <span class="orange-text">about</span> us? </div>
+                    <div class="about-us-box-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-box-circle"></div>
+    </div>
+
+    <div class="carousel-box team">
+        <div class="carousel-box-circle-2 team"></div>
+        <div class="screen-fix left column">
+            <div class="carousel-box-container">
+                <div class="screen-fix left column">
+                    <div class="title-border-yellow"></div>
+                    <div class="carousel-box-title">Our awesome <span class="yellow-text">team</span></div>
+                    <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
+                </div>
+            </div>
+
+            <div id="team_slide" class="splide">
+                <div class="splide__slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="team-card splide__slide">
+                                <div class="team-card-image" style="background-image: url('image/people-1.jpg')"></div>
+                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                                <div class="team-card-name">Rosaline Lowell</div>
+                                <div class="team-card-job">Writer</div>
+                                <div class="team-card-stars">
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                </div>
+                            </li>
+                            <li class="team-card splide__slide">
+                                <div class="team-card-image" style="background-image: url('image/people-2.jpg')"></div>
+                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                                <div class="team-card-name">Colbert Michaels</div>
+                                <div class="team-card-job">Blogger</div>
+                                <div class="team-card-stars">
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                </div>
+                            </li>
+                            <li class="team-card splide__slide">
+                                <div class="team-card-image" style="background-image: url('image/people-3.jpg')"></div>
+                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                                <div class="team-card-name">Delia Ashworth</div>
+                                <div class="team-card-job">SEO Specialist</div>
+                                <div class="team-card-stars">
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                </div>
+                            </li>
+                            <li class="team-card splide__slide">
+                                <div class="team-card-image" style="background-image: url('image/people-4.jpg')"></div>
+                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                                <div class="team-card-name">Earl Pryor</div>
+                                <div class="team-card-job">Programmer</div>
+                                <div class="team-card-stars">
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                </div>
+                            </li>
+                            <li class="team-card splide__slide">
+                                <div class="team-card-image" style="background-image: url('image/people-5.jpg')"></div>
+                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                                <div class="team-card-name">Chris Roberts</div>
+                                <div class="team-card-job">Artist</div>
+                                <div class="team-card-stars">
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                    <span class="material-icons-round">grade</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
 
 <script>
-    new Splide( '.splide', {
+    new Splide( '#article_slide', {
         width  : '100%',
         fixedWidth  : '340px',
         type   : 'loop',
         focus:'center',
+        autoplay:true,
+        interval:3000,
+    } ).mount();
+    new Splide( '#team_slide', {
+        width  : '100%',
+        fixedWidth  : '250px',
+        type   : 'loop',
+        focus:'center',
+        autoplay:true,
+        interval:3000,
     } ).mount();
 </script>
 
 <script src="js/search-field.js"></script>
+<script src="js/smooth-scroll.js"></script>
