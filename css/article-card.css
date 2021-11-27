@@ -1,6 +1,6 @@
-body .article-card{
+.article-card{
     position: relative;
-    margin-right: 30px;
+    margin-right: calc((100% - 1020px)/2);
     width: 340px;
     height: 550px;
     padding: 15px;
@@ -8,8 +8,9 @@ body .article-card{
     border-radius: 20px;
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
     backdrop-filter: blur(5px);
+    shape-rendering: geometricPrecision;
 }
-body .article-card:hover{
+.article-card:hover{
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
 .article-card:last-child{
@@ -18,7 +19,9 @@ body .article-card:hover{
 .article-card .tag-box{
     float: left;
     display: inline-block;
-    width: 60px;
+    width: min-content;
+    white-space: nowrap;
+    padding: 0 10px;
     height: 30px;
     line-height: 28px;
     border-radius: 15px;
@@ -76,7 +79,6 @@ body .article-card:hover{
     border-radius: 20px;
     background-size: cover;
     background-position: center;
-    background-image: url("../image/people-1.jpg");
 }
 .article-card .writer-name{
     float: left;
@@ -112,7 +114,7 @@ body .article-card:hover{
     font-weight: 400;
     font-size: 12px;
     text-align: center;
-    color: var(--tag-border-color);
+    color: var(--card-font-color);
     background-color: var(--tag-fill-color);
     border: 2px solid var(--tag-border-color);
 }
@@ -123,7 +125,7 @@ body .article-card:hover{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 340px;
+    width: 100%;
     height: 240px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;

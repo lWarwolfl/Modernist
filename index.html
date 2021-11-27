@@ -10,14 +10,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/top-nav.css">
     <link rel="stylesheet" href="css/hero-box.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/card-box.css">
     <link rel="stylesheet" href="css/article-card.css">
     <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/team-card.css">
-
-    <!--slider-->
-    <link rel="stylesheet" href="splide/css/splide.min.css">
-    <script src="splide/js/splide.min.js"></script>
 
     <!--google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
@@ -37,18 +33,18 @@
 <body>
 <div class="main">
     <div id="author" class="hero-box">
-        <div class="screen-fix center column">
-            <div class="top-nav-box">
-                <a href="#" class="top-logo-box">
+        <div class="screen-fix flex column center">
+            <div class="top-nav-box flex row center">
+                <a href="#" class="top-logo-box flex row right">
                     <div class="top-logo-animator"></div>
                     <div class="top-logo-name">Modernist</div>
                 </a>
 
-                <div class="top-nav">
+                <div class="top-nav flex row center">
                     <a class="top-nav-link" href="#">Home</a>
                     <a class="top-nav-link" href="#about">About us</a>
                     <a class="top-nav-link" href="#articles">Articles</a>
-                    <a class="top-nav-link" href="#author">Become an author</a>
+                    <a class="top-nav-link" href="#team">Our team</a>
                     <a class="top-nav-link" href="#">Contact us</a>
                     <a id="top-search-expand" class="top-nav-link" href="#" onclick="expand_search()"><span class="material-icons-outlined">search</span></a>
                     <form id="top-search-bar" class="top-search-bar">
@@ -60,25 +56,28 @@
                 <a class="sign-button" href="#">LOGIN <span class="material-icons-outlined">login</span></a>
             </div>
 
-            <div class="hero-box-container">
+            <div class="hero-box-container flex row center">
                 <div class="hero-box-text-container">
                     <div class="title-border-orange"></div>
-                    <div class="hero-box-title">Share your <span class="orange-text">ideas</span> with everyone! </div>
+                    <div class="hero-box-title"><span class="orange-text">Search</span> for anything intresting! </div>
                     <div class="hero-box-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
                         no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
                         consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</div>
-                    <a href="#" class="button hero-box-button">BECOME AN AUTHOR</a>
+                    <form id="hero-search-bar" class="hero-search-bar">
+                        <label id="hero-search-button" class="hero-search-button"><span class="material-icons-outlined">search</span></label>
+                        <input id="hero-search-input" type="text" class="hero-search-input" placeholder="Search...">
+                    </form>
                 </div>
 
                 <div class="hero-box-image-container"></div>
             </div>
 
-            <div class="hero-box-stats-container">
+            <div class="hero-box-stats-container flex row center">
                 <div class="hero-box-stats">
-                    <div class="hero-box-stats-image-container">
-                        <div class="hero-box-stats-image"><span class="material-icons-round">visibility</span></div>
+                    <div class="hero-box-stats-icon-container">
+                        <span class="material-icons-round">visibility</span>
                     </div>
                     <div class="hero-box-stats-number">12689
                         <div class="hero-box-stats-name">Visits</div>
@@ -86,8 +85,8 @@
                 </div>
 
                 <div class="hero-box-stats">
-                    <div class="hero-box-stats-image-container">
-                        <div class="hero-box-stats-image"><span class="material-icons-round">article</span></div>
+                    <div class="hero-box-stats-icon-container">
+                        <span class="material-icons-round">article</span>
                     </div>
                     <div class="hero-box-stats-number">675
                         <div class="hero-box-stats-name">Articles</div>
@@ -95,8 +94,8 @@
                 </div>
 
                 <div class="hero-box-stats">
-                    <div class="hero-box-stats-image-container">
-                        <div class="hero-box-stats-image"><span class="material-icons-round">edit</span></div>
+                    <div class="hero-box-stats-icon-container">
+                        <span class="material-icons-round">edit</span>
                     </div>
                     <div class="hero-box-stats-number">5
                         <div class="hero-box-stats-name">Authors</div>
@@ -104,8 +103,8 @@
                 </div>
 
                 <div class="hero-box-stats">
-                    <div class="hero-box-stats-image-container">
-                        <div class="hero-box-stats-image"><span class="material-icons-round">group</span></div>
+                    <div class="hero-box-stats-icon-container">
+                        <span class="material-icons-round">group</span>
                     </div>
                     <div class="hero-box-stats-number">250
                         <div class="hero-box-stats-name">Users</div>
@@ -115,97 +114,63 @@
         </div>
     </div>
 
-    <div id="articles" class="carousel-box article">
-        <div class="carousel-box-circle"></div>
-        <div class="carousel-box-circle-2"></div>
-        <div class="screen-fix left column">
-            <div class="carousel-box-container">
-                <div class="screen-fix left column">
-                    <div class="title-border-yellow"></div>
-                    <div class="carousel-box-title">Popular <span class="yellow-text">articles</span></div>
-                    <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
-                </div>
+    <div id="articles" class="card-box article">
+        <div class="card-box-circle"></div>
+        <div class="card-box-circle-2"></div>
+        <div class="screen-fix flex column center">
+            <div class="card-box-container flex column left">
+                <div class="title-border-yellow"></div>
+                <div class="card-box-title">Popular <span class="yellow-text">articles</span></div>
+                <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
             </div>
-            <div id="article_slide" class="splide">
-                <div class="splide__slider">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="article-card splide__slide">
-                                <div class="tag-box">Article</div>
-                                <div class="time-description">10 min read - April 5, 2021</div>
-                                <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
-                                <div class="writer-box">
-                                    <div class="writer-image" style="background-image: url('image/people-1.jpg')"></div>
-                                    <div class="writer-name">Rosaline Lowell</div><br>
-                                    <div class="writer-job">Writer</div>
-                                </div>
-                                <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
-                                <div class="article-image" style="background-image: url('image/article-1.jpg')"></div>
-                            </li>
-                            <li class="article-card splide__slide">
-                                <div class="tag-box">Article</div>
-                                <div class="time-description">10 min read - April 5, 2021</div>
-                                <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
-                                <div class="writer-box">
-                                    <div class="writer-image" style="background-image: url('image/people-2.jpg')"></div>
-                                    <div class="writer-name">Colbert Michaels</div><br>
-                                    <div class="writer-job">Blogger</div>
-                                </div>
-                                <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
-                                <div class="article-image" style="background-image: url('image/article-2.jpg')"></div>
-                            </li>
-                            <li class="article-card splide__slide">
-                                <div class="tag-box">Article</div>
-                                <div class="time-description">10 min read - April 5, 2021</div>
-                                <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
-                                <div class="writer-box">
-                                    <div class="writer-image" style="background-image: url('image/people-3.jpg')"></div>
-                                    <div class="writer-name">Delia Ashworth</div><br>
-                                    <div class="writer-job">SEO Specialist</div>
-                                </div>
-                                <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
-                                <div class="article-image" style="background-image: url('image/article-3.jpg')"></div>
-                            </li>
-                            <li class="article-card splide__slide">
-                                <div class="tag-box">Article</div>
-                                <div class="time-description">10 min read - April 5, 2021</div>
-                                <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
-                                <div class="writer-box">
-                                    <div class="writer-image" style="background-image: url('image/people-4.jpg')"></div>
-                                    <div class="writer-name">Earl Pryor</div><br>
-                                    <div class="writer-job">Programmer</div>
-                                </div>
-                                <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
-                                <div class="article-image" style="background-image: url('image/article-4.jpg')"></div>
-                            </li>
-                            <li class="article-card splide__slide">
-                                <div class="tag-box">Article</div>
-                                <div class="time-description">10 min read - April 5, 2021</div>
-                                <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
-                                <div class="writer-box">
-                                    <div class="writer-image" style="background-image: url('image/people-5.jpg')"></div>
-                                    <div class="writer-name">Chris Roberts</div><br>
-                                    <div class="writer-job">Artist</div>
-                                </div>
-                                <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
-                                <div class="article-image" style="background-image: url('image/article-5.jpg')"></div>
-                            </li>
-                        </ul>
+            <div class="flex row center margin-50 full-width">
+                <div class="article-card">
+                    <div class="tag-box">Design</div>
+                    <div class="time-description">10 min read - April 5, 2021</div>
+                    <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+                    <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
+                    <div class="writer-box">
+                        <div class="writer-image" style="background-image: url('image/people-1.jpeg')"></div>
+                        <div class="writer-name">Rosaline Lowell</div><br>
+                        <div class="writer-job">Writer</div>
                     </div>
+                    <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
+                    <div class="article-image" style="background-image: url('image/article-1.jpeg')"></div>
+                </div>
+                <div class="article-card">
+                    <div class="tag-box">Technology</div>
+                    <div class="time-description">10 min read - April 5, 2021</div>
+                    <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+                    <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
+                    <div class="writer-box">
+                        <div class="writer-image" style="background-image: url('image/people-2.jpeg')"></div>
+                        <div class="writer-name">Colbert Michaels</div><br>
+                        <div class="writer-job">Blogger</div>
+                    </div>
+                    <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
+                    <div class="article-image" style="background-image: url('image/article-2.jpeg')"></div>
+                </div>
+                <div class="article-card">
+                    <div class="tag-box">Life Style</div>
+                    <div class="time-description">10 min read - April 5, 2021</div>
+                    <div class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+                    <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</div>
+                    <div class="writer-box">
+                        <div class="writer-image" style="background-image: url('image/people-3.jpeg')"></div>
+                        <div class="writer-name">Delia Ashworth</div><br>
+                        <div class="writer-job">SEO Specialist</div>
+                    </div>
+                    <a href="#" class="button-tag">Read more <span class="material-icons-outlined" style="font-size: 15px">east</span></a>
+                    <div class="article-image" style="background-image: url('image/article-3.jpeg')"></div>
                 </div>
             </div>
-            <a href="#" class="button carousel-box-button">SEE MORE</a>
+            <a href="#" class="button card-box-button">SEE MORE</a>
         </div>
     </div>
 
     <div id="about" class="about-us-box">
-        <div class="screen-fix center column">
-            <div class="about-us-box-container">
+        <div class="screen-fix">
+            <div class="about-us-box-container flex row center">
                 <div class="about-us-box-image-container"></div>
 
                 <div class="about-us-box-text-container">
@@ -222,87 +187,66 @@
         <div class="about-us-box-circle"></div>
     </div>
 
-    <div class="carousel-box team">
-        <div class="carousel-box-circle-2 team"></div>
-        <div class="screen-fix left column">
-            <div class="carousel-box-container">
-                <div class="screen-fix left column">
-                    <div class="title-border-yellow"></div>
-                    <div class="carousel-box-title">Our awesome <span class="yellow-text">team</span></div>
-                    <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
-                </div>
+    <div id="team" class="card-box team flex column center">
+        <div class="card-box-circle-2 team"></div>
+        <div class="screen-fix">
+            <div class="card-box-container flex column left">
+                <div class="title-border-yellow"></div>
+                <div class="card-box-title">Our awesome <span class="yellow-text">team</span></div>
+                <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
             </div>
 
-            <div id="team_slide" class="splide">
-                <div class="splide__slider">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="team-card splide__slide">
-                                <div class="team-card-image" style="background-image: url('image/people-1.jpg')"></div>
-                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
-                                <div class="team-card-name">Rosaline Lowell</div>
-                                <div class="team-card-job">Writer</div>
-                                <div class="team-card-stars">
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                </div>
-                            </li>
-                            <li class="team-card splide__slide">
-                                <div class="team-card-image" style="background-image: url('image/people-2.jpg')"></div>
-                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
-                                <div class="team-card-name">Colbert Michaels</div>
-                                <div class="team-card-job">Blogger</div>
-                                <div class="team-card-stars">
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                </div>
-                            </li>
-                            <li class="team-card splide__slide">
-                                <div class="team-card-image" style="background-image: url('image/people-3.jpg')"></div>
-                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
-                                <div class="team-card-name">Delia Ashworth</div>
-                                <div class="team-card-job">SEO Specialist</div>
-                                <div class="team-card-stars">
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                </div>
-                            </li>
-                            <li class="team-card splide__slide">
-                                <div class="team-card-image" style="background-image: url('image/people-4.jpg')"></div>
-                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
-                                <div class="team-card-name">Earl Pryor</div>
-                                <div class="team-card-job">Programmer</div>
-                                <div class="team-card-stars">
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                </div>
-                            </li>
-                            <li class="team-card splide__slide">
-                                <div class="team-card-image" style="background-image: url('image/people-5.jpg')"></div>
-                                <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
-                                <div class="team-card-name">Chris Roberts</div>
-                                <div class="team-card-job">Artist</div>
-                                <div class="team-card-stars">
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                    <span class="material-icons-round">grade</span>
-                                </div>
-                            </li>
-                        </ul>
+            <div class="flex row center margin-70">
+                <div class="team-card">
+                    <div class="team-card-image" style="background-image: url('image/people-1.jpeg')"></div>
+                    <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                    <div class="team-card-name">Rosaline Lowell</div>
+                    <div class="team-card-job">Writer</div>
+                    <div class="team-card-stars">
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image" style="background-image: url('image/people-2.jpeg')"></div>
+                    <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                    <div class="team-card-name">Colbert Michaels</div>
+                    <div class="team-card-job">Blogger</div>
+                    <div class="team-card-stars">
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image" style="background-image: url('image/people-3.jpeg')"></div>
+                    <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                    <div class="team-card-name">Delia Ashworth</div>
+                    <div class="team-card-job">SEO Specialist</div>
+                    <div class="team-card-stars">
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image" style="background-image: url('image/people-4.jpeg')"></div>
+                    <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
+                    <div class="team-card-name">Earl Pryor</div>
+                    <div class="team-card-job">Programmer</div>
+                    <div class="team-card-stars">
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
+                        <span class="material-icons-round">grade</span>
                     </div>
                 </div>
             </div>
@@ -311,25 +255,6 @@
 </div>
 </body>
 </html>
-
-<script>
-    new Splide( '#article_slide', {
-        width  : '100%',
-        fixedWidth  : '340px',
-        type   : 'loop',
-        focus:'center',
-        autoplay:true,
-        interval:3000,
-    } ).mount();
-    new Splide( '#team_slide', {
-        width  : '100%',
-        fixedWidth  : '250px',
-        type   : 'loop',
-        focus:'center',
-        autoplay:true,
-        interval:3000,
-    } ).mount();
-</script>
 
 <script src="js/search-field.js"></script>
 <script src="js/smooth-scroll.js"></script>

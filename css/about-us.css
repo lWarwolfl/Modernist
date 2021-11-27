@@ -4,10 +4,6 @@
     height: 500px;
 }
 .about-us-box-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: min-content;
     padding: 50px 40px;
@@ -18,15 +14,6 @@
 }
 .about-us-box-container:hover{
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
-}
-.about-us-box-circle{
-    position: absolute;
-    right: calc(50% - 600px);
-    bottom: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background-image: var(--gradient);
 }
 .about-us-box-text-container{
     width: 50%;
