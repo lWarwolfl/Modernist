@@ -1,65 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Modernist</title>
-
-    <!--local files-->
-    <link rel="stylesheet" href="css/root-light.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/top-nav.css">
-    <link rel="stylesheet" href="css/hero-box.css">
-    <link rel="stylesheet" href="css/card-box.css">
-    <link rel="stylesheet" href="css/article-card.css">
-    <link rel="stylesheet" href="css/about-us.css">
-    <link rel="stylesheet" href="css/team-card.css">
-
-    <!--google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <!--jquery cdn-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!--font awesome cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <?php
+    $title = "Home";
+    include 'components/head.php';
+    ?>
 </head>
 <body>
 <div class="main">
-    <div id="author" class="hero-box">
+    <div class="hero-box">
         <div class="screen-fix flex column center">
-            <div class="top-nav-box flex row center">
-                <a href="#" class="top-logo-box flex row right">
-                    <div class="top-logo-animator"></div>
-                    <div class="top-logo-name">Modernist</div>
-                </a>
+            <?php
+            include 'components/header.php';
+            ?>
 
-                <div class="top-nav flex row center">
-                    <a class="top-nav-link" href="#">Home</a>
-                    <a class="top-nav-link" href="#about">About us</a>
-                    <a class="top-nav-link" href="#articles">Articles</a>
-                    <a class="top-nav-link" href="#team">Our team</a>
-                    <a class="top-nav-link" href="#">Contact us</a>
-                    <a id="top-search-expand" class="top-nav-link" href="#" onclick="expand_search()"><span class="material-icons-outlined">search</span></a>
-                    <form id="top-search-bar" class="top-search-bar">
-                        <label id="top-search-button" class="top-search-button"><span class="material-icons-outlined">search</span></label>
-                        <input id="top-search-input" type="text" class="top-search-input" placeholder="Search...">
-                    </form>
-                </div>
-
-                <a class="sign-button" href="#">LOGIN <span class="material-icons-outlined">login</span></a>
-            </div>
-
-            <div class="hero-box-container flex row center">
+            <div id="about" class="hero-box-container flex row center">
                 <div class="hero-box-text-container">
-                    <div class="title-border-orange"></div>
-                    <div class="hero-box-title"><span class="orange-text">Search</span> for anything intresting! </div>
+                    <div class="title-border-second-color"></div>
+                    <div class="hero-box-title"><span class="second-color-text">Search</span> for anything intresting! </div>
                     <div class="hero-box-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
@@ -114,16 +72,16 @@
         </div>
     </div>
 
-    <div id="articles" class="card-box article">
+    <div id="article" class="card-box article">
         <div class="card-box-circle"></div>
         <div class="card-box-circle-2"></div>
         <div class="screen-fix flex column center">
-            <div class="card-box-container flex column left">
-                <div class="title-border-yellow"></div>
-                <div class="card-box-title">Popular <span class="yellow-text">articles</span></div>
+            <div class="card-box-text flex column left">
+                <div class="title-border-first-color"></div>
+                <div class="card-box-title">Popular <span class="first-color-text">articles</span></div>
                 <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
             </div>
-            <div class="flex row center margin-50 full-width">
+            <div class="flex row center full-width">
                 <div class="article-card">
                     <div class="tag-box">Design</div>
                     <div class="time-description">10 min read - April 5, 2021</div>
@@ -168,35 +126,16 @@
         </div>
     </div>
 
-    <div id="about" class="about-us-box">
-        <div class="screen-fix">
-            <div class="about-us-box-container flex row center">
-                <div class="about-us-box-image-container"></div>
-
-                <div class="about-us-box-text-container">
-                    <div class="title-border-orange"></div>
-                    <div class="about-us-box-title">Want to know more <span class="orange-text">about</span> us? </div>
-                    <div class="about-us-box-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</div>
-                </div>
-            </div>
-        </div>
-        <div class="about-us-box-circle"></div>
-    </div>
-
-    <div id="team" class="card-box team flex column center">
+    <div id="team" class="card-box team">
         <div class="card-box-circle-2 team"></div>
-        <div class="screen-fix">
-            <div class="card-box-container flex column left">
-                <div class="title-border-yellow"></div>
-                <div class="card-box-title">Our awesome <span class="yellow-text">team</span></div>
+        <div class="screen-fix flex column center">
+            <div class="card-box-text flex column left">
+                <div class="title-border-first-color"></div>
+                <div class="card-box-title">Our awesome <span class="first-color-text">team</span></div>
                 <div class="title-description">Popular articles based on user view come up in this section. for more articles click on see more.</div>
             </div>
 
-            <div class="flex row center margin-70">
+            <div class="flex row center margin-20 full-width">
                 <div class="team-card">
                     <div class="team-card-image" style="background-image: url('image/people-1.jpeg')"></div>
                     <div class="team-card-description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</div>
@@ -252,6 +191,62 @@
             </div>
         </div>
     </div>
+
+    <div id="contact" class="footer-box">
+        <div class="screen-fix flex column center">
+            <div class="full-width flex row center">
+                <div class="footer-part">
+                    <div class="footer-part-title">Contact us</div>
+                    <div class="footer-part-border"></div>
+                    <div class="footer-link-container">
+                        <div class="footer-link">+12 345 678 910</div>
+                        <div class="footer-link">mail@mail.com</div>
+                    </div>
+                </div>
+                <div class="footer-part">
+                    <div class="footer-part-title">Services</div>
+                    <div class="footer-part-border"></div>
+                    <div class="footer-link-container">
+                        <a href="" class="footer-link">Support</a>
+                        <a href="" class="footer-link">FAQ</a>
+                        <a href="" class="footer-link">Report an issue</a>
+                    </div>
+                </div>
+                <div class="footer-part">
+                    <div class="footer-part-title">Information</div>
+                    <div class="footer-part-border"></div>
+                    <div class="footer-link-container">
+                        <a href="#about" class="footer-link">About us</a>
+                        <a href="" class="footer-link">Terms of use</a>
+                        <a href="" class="footer-link">Privacy policy</a>
+                    </div>
+                </div>
+                <div class="footer-part">
+                    <div class="footer-title">Stay in touch and join our <span class="first-color-text">newsletter</span></div>
+                    <form class="footer-submit-bar">
+                        <label class="footer-submit-button">SUBMIT</label>
+                        <input type="text" class="footer-submit-input" placeholder="Enter email...">
+                    </form>
+                </div>
+            </div>
+
+            <div class="full-width flex column center margin-20">
+                <a href="#" class="logo-box flex row right">
+                    <div class="logo-animator"></div>
+                    <div class="logo-name">Modernist</div>
+                </a>
+                <div class="share-links">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-telegram"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-reddit"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-rights">Copyright @ Modernist 2021</div>
 </div>
 </body>
 </html>

@@ -4,26 +4,18 @@
     background-color: transparent;
 }
 .card-box.article{
-    height:1000px;
+    height:900px;
 }
 .card-box.team{
-    height:700px;
+    height:600px;
 }
-.card-box-container{
+.card-box-text{
     position: relative;
     width: 100%;
     height:220px;
-    border-radius: 20px;
-    padding: 0 40px;
-    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
-    backdrop-filter: blur(5px);
-    background-color: var(--card-box-color);
-}
-.card-box-container:hover{
-    box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
 .card-box-title{
-    width: 100%;
+    width: 30%;
     height: 50px;
     line-height: 50px;
     margin-bottom: 20px;
@@ -31,7 +23,17 @@
     font-weight: 700;
     font-size: 32px;
     text-align: left;
-    color: var(--hero-font-color);
+    color: var(--font-color);
+}
+.title-description{
+    float: left;
+    display: inline-block;
+    margin-top: 8px;
+    width: 30%;
+    height: 50px;
+    font-family: var(--font);
+    font-size: 15px;
+    color: var(--font-color);
 }
 .card-box-button{
     align-self: center;

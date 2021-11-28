@@ -24,55 +24,106 @@ input:focus,button:focus{
     outline: none;
     border: none;
 }
-.screen-fix{
+.logo-box{
+    position: relative;
+    width: 220px;
+    height: 40px;
+}
+.logo-animator{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px -2px var(--box-shadow-color);
+    background-image: var(--gradient);
+    background-size: 200% 200%;
+    background-position: 50% 100%;
+    z-index: 10;
+    transition: 0.4s;
+}
+.logo-name{
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: var(--font-color);
+}
+.logo-box:hover{
+    margin-right: 60px;
+    width: 160px;
+    justify-content: center;
+}
+.logo-box:hover .logo-name{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 24px;
+    color: var(--opposite-font-color);
+    text-align: center;
+    z-index: 100;
+}
+.logo-box:hover .logo-animator{
+    width: 100%;
+    box-shadow: 0 4px 6px -2px var(--box-shadow-color);
+    background-position: 130% 100%;
+}
+body .screen-fix{
     position: absolute;
     width: 1100px;
     margin: 0 calc(50% - 550px);
     height: 100%;
     z-index: 2000;
 }
-.margin-20{
+body .margin-20{
     margin-top: 20px;
 }
-.margin-50{
+body .margin-50{
     margin-top: 50px;
 }
-.margin-70{
+body .margin-70{
     margin-top: 70px;
 }
-.full-width{
+body .full-width{
     width: 100%;
 }
-.flex{
+body .flex{
     display: flex;
 }
-.flex.row{
+body .flex.row{
     flex-direction: row;
 }
-.flex.column{
+body .flex.column{
     flex-direction: column;
 }
-.flex.column.left{
+body .flex.column.left{
     align-items: flex-start;
     justify-content: center;
 }
-.flex.column.right{
+body .flex.column.right{
     align-items: flex-end;
     justify-content: center;
 }
-.flex.column.center{
+body .flex.column.center{
     align-items: center;
     justify-content: center;
 }
-.flex.row.left{
+body .flex.row.left{
     align-items: center;
     justify-content: left;
 }
-.flex.row.right{
+body .flex.row.right{
     align-items: center;
     justify-content: right;
 }
-.flex.row.center{
+body .flex.row.center{
     align-items: center;
     justify-content: center;
 }
@@ -86,7 +137,7 @@ input:focus,button:focus{
     font-weight: 400;
     font-size: 13px;
     text-align: center;
-    color: var(--button-font-color);
+    color: var(--opposite-font-color);
     background-image: var(--gradient);
     background-size: 200% 200%;
     background-position: 50% 100%;
@@ -96,33 +147,23 @@ input:focus,button:focus{
     box-shadow: 0 4px 6px -2px var(--box-shadow-color);
     background-position: 150% 100%;
 }
-.yellow-text{
-    color: var(--yellow);
+.first-color-text{
+    color: var(--first-color);
 }
-.orange-text{
-    color: var(--orange);
+.second-color-text{
+    color: var(--second-color);
 }
-.title-border-yellow{
+.title-border-first-color{
     margin-bottom: 5px;
     width: 80px;
     height: 0;
-    border-bottom: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--first-color);
 }
-.title-border-orange{
+.title-border-second-color{
     margin-bottom: 5px;
     width: 80px;
     height: 0;
-    border-bottom: 2px solid var(--orange);
-}
-.title-description{
-    float: left;
-    display: inline-block;
-    margin-top: 8px;
-    width: 300px;
-    height: 50px;
-    font-family: var(--font);
-    font-size: 15px;
-    color: var(--font-color);
+    border-bottom: 2px solid var(--second-color);
 }
 
 @media screen and (max-width: 1350px) {
@@ -133,17 +174,17 @@ input:focus,button:focus{
     }
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--button-font-color);
+.hero-search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--opposite-font-color);
     opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--button-font-color);
+.hero-search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--opposite-font-color);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--button-font-color);
+.hero-search-input::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--opposite-font-color);
 }
 
 ::-webkit-scrollbar {

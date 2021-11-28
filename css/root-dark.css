@@ -1,20 +1,11 @@
 :root{
     --font: "Roboto";
     --gradient: linear-gradient(90deg, rgba(247,192,37,1) 0%, rgba(254,126,0,1) 150%);
-    --yellow: #F7C025;
-    --orange: #FE7E00;
+    --first-color: #F7C025;
+    --second-color: #FE7E00;
     --body-color: #222222;
     --box-shadow-color: #222222;
     --font-color: #ffffff;
-    --hero-font-color: #ffffff;
     --image-overlay-color: #222222;
-    --hero-box-color: #323232;
-    --top-nav-link-color: #222222;
-    --search-box-color: #222222;
-    --search-box-hover-color: #292929;
-    --card-color: #ffffff;
-    --card-font-color: #222222;
-    --tag-fill-color: #ECEBEB;
-    --tag-border-color: #1F1F1F;
-    --hero-box-container-color: rgba(50, 50, 50, 0.5);
+    --top-bottom-box-color: #323232;
 }

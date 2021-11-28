@@ -1,57 +1,6 @@
-.top-nav-box{
+.nav-box{
     width: 100%;
     height: 40px;
-}
-.top-logo-box{
-    position: relative;
-    width: 220px;
-    height: 40px;
-}
-.top-logo-animator{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px -2px var(--box-shadow-color);
-    background-image: var(--gradient);
-    background-size: 200% 200%;
-    background-position: 50% 100%;
-    z-index: 10;
-    transition: 0.4s;
-}
-.top-logo-name{
-    width: 170px;
-    height: 40px;
-    line-height: 40px;
-    font-family: var(--font);
-    font-weight: 700;
-    font-size: 28px;
-    letter-spacing: 1px;
-    color: var(--font-color);
-}
-.top-logo-box:hover{
-    margin-right: 60px;
-    width: 160px;
-    justify-content: center;
-}
-.top-logo-box:hover .top-logo-name{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    font-size: 24px;
-    color: var(--button-font-color);
-    text-align: center;
-    z-index: 100;
-}
-.top-logo-box:hover .top-logo-animator{
-    width: 100%;
-    box-shadow: 0 4px 6px -2px var(--box-shadow-color);
-    background-position: 130% 100%;
 }
 .top-nav{
     float: left;
@@ -74,7 +23,7 @@
 .top-nav-link:hover{
     margin: 0 8px;
     padding: 12px;
-    background-color: var(--top-nav-link-color);
+    background-color: var(--light-color);
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
 .sign-button{
@@ -88,7 +37,7 @@
     font-weight: 400;
     font-size: 13px;
     text-align: center;
-    color: var(--button-font-color);
+    color: var(--opposite-font-color);
     background-image: var(--gradient);
     background-size: 200% 200%;
     background-position: 50% 100%;
@@ -105,7 +54,7 @@ body .material-icons-outlined{
 .top-search-bar{
     position: absolute;
     display: inline-block;
-    right: calc(50% - 280px);
+    right: calc(50% - 210px);
     width: 0;
     height: 40px;
     border-radius: 20px;
@@ -125,10 +74,10 @@ body .material-icons-outlined{
     font-family: var(--font);
     font-size: 13px;
     color: var(--font-color);
-    background-color: var(--search-box-color);
+    background-color: var(--light-color);
 }
 .top-search-input:hover{
-    background-color: var(--search-box-hover-color);
+    background-color: var(--light-hover-color);
 }
 .top-search-button{
     position: absolute;

@@ -1,23 +1,14 @@
 :root{
     --font: "Roboto";
     --gradient: linear-gradient(90deg, #F7C025 0%, #FE7E00 150%);
-    --yellow: #F7C025;
-    --orange: #FE7E00;
+    --first-color: #F7C025;
+    --second-color: #FE7E00;
+    --light-color: #f5ecd6;
+    --light-hover-color: #f3e1b8;
+    --lighter-color: #fffaeb;
     --body-color: #eeeeee;
     --box-shadow-color: #aaaaaa;
     --font-color: #222222;
-    --hero-font-color: #222222;
-    --button-font-color: #ffffff;
-    --image-overlay-color: #222222;
-    --hero-box-color: #F2F2F2;
-    --hero-box-container-color: #f5ecd6;
-    --top-nav-link-color: #f5ecd6;
-    --search-box-color: #f5ecd6;
-    --search-box-hover-color: #f3e1b8;
-    --card-box-color: #f5ecd6;
-    --card-color: #f5ecd6;
-    --card-font-color: #222222;
-    --tag-fill-color: #fffaeb;
-    --tag-border-color: #FE7E00;
-    --about-us-container-color: #f5ecd6;
+    --opposite-font-color: #ffffff;
+    --top-bottom-box-color: #F2F2F2;
 }
