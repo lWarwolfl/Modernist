@@ -141,3 +141,11 @@
         height: 240px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .story-card{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
