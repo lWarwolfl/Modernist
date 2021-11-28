@@ -23,7 +23,7 @@
 .top-nav-link:hover{
     margin: 0 8px;
     padding: 12px;
-    background-color: var(--light-color);
+    background-color: var(--lighter-color);
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
 .sign-button{
@@ -54,7 +54,7 @@ body .material-icons-outlined{
 .top-search-bar{
     position: absolute;
     display: inline-block;
-    right: calc(50% - 210px);
+    right: calc(50% - 240px);
     width: 0;
     height: 40px;
     border-radius: 20px;
@@ -74,7 +74,7 @@ body .material-icons-outlined{
     font-family: var(--font);
     font-size: 13px;
     color: var(--font-color);
-    background-color: var(--light-color);
+    background-color: var(--lighter-color);
 }
 .top-search-input:hover{
     background-color: var(--light-hover-color);
@@ -90,4 +90,19 @@ body .material-icons-outlined{
     text-align: center;
     color: var(--font-color);
     font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    body .nav-box{
+        display: block;
+    }
+    body .top-nav{
+        display: none;
+    }
+    .sign-button{
+        float: right;
+    }
+    .logo-box.top{
+        float: left;
+    }
 }

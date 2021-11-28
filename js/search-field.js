@@ -1,6 +1,6 @@
 function expand_search() {
     $('.top-nav-link').css('display', 'none');
-    $('.top-search-bar').css('width', '420px');
+    $('.top-search-bar').css('width', '480px');
 }
 document.addEventListener("click", (evt) => {
     const bar = document.getElementById("top-search-bar");

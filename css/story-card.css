@@ -1,134 +1,143 @@
-.article-card{
+.story-card{
+    display: inline-block;
     position: relative;
-    margin-right: calc((100% - 1020px)/2);
+    margin: 0 12px 20px 12px;
     width: 340px;
     height: 550px;
     padding: 15px;
-    background-color: var(--light-color);
+    background-color: var(--lighter-color);
     border-radius: 20px;
+    text-align: left;
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
     backdrop-filter: blur(5px);
     shape-rendering: geometricPrecision;
 }
-.article-card:hover{
+.story-card:hover{
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
-.article-card:last-child{
-    margin-right: 0;
-}
-.article-card .tag-box{
+.story-card .tag-box{
     float: left;
     display: inline-block;
     width: min-content;
     white-space: nowrap;
     padding: 0 10px;
-    height: 30px;
-    line-height: 28px;
-    border-radius: 15px;
+    height: 35px;
+    line-height: 32px;
+    border-radius: 20px;
     font-family: var(--font);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     color: var(--font-color);
-    background-color: var(--lighter-color);
+    background-color: var(--very-light-color);
     border: 2px solid var(--second-color);
 }
-.article-card .time-description{
+.story-card .time-description{
     float: left;
     display: inline-block;
     margin-left: 10px;
-    height: 30px;
-    line-height: 30px;
+    height: 35px;
+    line-height: 35px;
     font-family: var(--font);
     font-weight: 100;
-    font-size: 12px;
+    font-size: 13px;
     color: var(--font-color);
 }
-.article-card .title{
+.story-card .title{
     float: left;
     display: inline-block;
     margin-top: 15px;
     width: 100%;
-    height: 50px;
+    height: min-content;
     font-family: var(--font);
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--font-color);
 }
-.article-card .text{
+.story-card .text{
     float: left;
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 15px;
     width: 100%;
-    height: 70px;
+    height: min-content;
     font-family: var(--font);
-    font-size: 15px;
+    font-size: 16px;
     color: var(--font-color);
 }
-.article-card .writer-box{
+.story-card .writer-box{
     float: left;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100%;
-    height: 40px;
+    height: 50px;
 }
-.article-card .writer-image{
+.story-card .writer-image{
     float: left;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin-right: 5px;
-    border-radius: 20px;
+    border-radius: 25px;
     background-size: cover;
     background-position: center;
 }
-.article-card .writer-name{
+.story-card .writer-name{
     float: left;
     display: inline-block;
-    width: calc(100% - 45px);
-    height: 20px;
-    line-height: 20px;
+    width: calc(100% - 65px);
+    height: 25px;
+    line-height: 25px;
     font-family: var(--font);
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--font-color);
 }
-.article-card .writer-job{
+.story-card .writer-job{
     float: left;
     display: inline-block;
-    width: calc(100% - 45px);
-    height: 20px;
-    line-height: 20px;
+    width: calc(100% - 65px);
+    height: 25px;
+    line-height: 25px;
     font-family: var(--font);
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--font-color);
 }
-.article-card .button-tag{
+.story-card .button-tag{
     float: left;
     display: inline-block;
-    width: 100px;
-    height: 30px;
+    width: 110px;
+    height: 35px;
     margin-top: 20px;
-    line-height: 28px;
-    border-radius: 15px;
+    line-height: 32px;
+    border-radius: 20px;
     font-family: var(--font);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     color: var(--font-color);
-    background-color: var(--lighter-color);
+    background-color: var(--very-light-color);
     border: 2px solid var(--second-color);
 }
-.article-card .button-tag:hover{
+.story-card .button-tag:hover{
     background-color: var(--light-color);
 }
-.article-card .article-image{
+.story-card .story-image{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 240px;
+    height: 230px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-size: cover;
     background-position: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .story-card{
+        width: 400px;
+        margin: 0 20px 30px 20px;
+    }
+    .story-card .story-image{
+        height: 240px;
+    }
 }

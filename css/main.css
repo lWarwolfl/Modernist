@@ -76,7 +76,7 @@ input:focus,button:focus{
     background-position: 130% 100%;
 }
 body .screen-fix{
-    position: absolute;
+    position: relative;
     width: 1100px;
     margin: 0 calc(50% - 550px);
     height: 100%;
@@ -166,11 +166,11 @@ body .flex.row.center{
     border-bottom: 2px solid var(--second-color);
 }
 
-@media screen and (max-width: 1350px) {
-    .screen-fix{
+@media screen and (max-width: 1366px) {
+    body .screen-fix{
         width: 100%;
         margin: 0;
-        padding: 0 40px;
+        padding: 0 30px;
     }
 }
 

@@ -1,24 +1,19 @@
 .card-box{
     position: relative;
     width: 100%;
-    background-color: transparent;
-}
-.card-box.article{
-    height:900px;
-}
-.card-box.team{
-    height:600px;
+    padding: 30px 0;
+    text-align: center;
 }
 .card-box-text{
     position: relative;
     width: 100%;
-    height:220px;
+    height:min-content;
+    margin-bottom: 30px;
 }
 .card-box-title{
-    width: 30%;
-    height: 50px;
-    line-height: 50px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: min-content;
+    line-height: 40px;
     font-family: var(--font);
     font-weight: 700;
     font-size: 32px;
@@ -28,15 +23,67 @@
 .title-description{
     float: left;
     display: inline-block;
-    margin-top: 8px;
-    width: 30%;
-    height: 50px;
+    width: 100%;
+    height: min-content;
+    margin-top: 20px;
     font-family: var(--font);
     font-size: 15px;
+    text-align: left;
     color: var(--font-color);
+}
+.card-box-text-separator{
+    float: left;
+    position: relative;
+    width: 30%;
+    height:min-content;
+}
+.category-box{
+    float: left;
+    margin-left: 5%;
+    width: 65%;
+    height: min-content;
+    text-align: center;
+}
+.category-tag{
+    cursor: pointer;
+    display: inline-block;
+    width: min-content;
+    white-space: nowrap;
+    padding: 0 10px;
+    min-width: 50px;
+    height: 40px;
+    line-height: 36px;
+    margin: 0 5px 15px 5px;
+    border-radius: 20px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: var(--font-color);
+    background-color: transparent;
+    border: 2px solid var(--second-color);
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+}
+.category-tag.active{
+    background-color: var(--second-color);
+}
+.category-tag:hover{
+    background-color: var(--lighter-color);
+    box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
 .card-box-button{
     align-self: center;
     margin-top: 30px;
     width: 120px;
+}
+
+@media screen and (max-width: 900px) {
+    .card-box-text-separator{
+        width: 100%;
+    }
+    .category-box{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }

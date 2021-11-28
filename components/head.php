@@ -8,10 +8,10 @@
 <link rel="stylesheet" href="css/top-nav.css">
 <link rel="stylesheet" href="css/hero-box.css">
 <link rel="stylesheet" href="css/card-box.css">
-<link rel="stylesheet" href="css/article-card.css">
-<link rel="stylesheet" href="css/about-us.css">
+<link rel="stylesheet" href="css/story-card.css">
 <link rel="stylesheet" href="css/team-card.css">
 <link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/category-card.css">
 
 <!--google fonts-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">

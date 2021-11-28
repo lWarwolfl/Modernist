@@ -6,9 +6,12 @@
     --light-color: #f5ecd6;
     --light-hover-color: #f3e1b8;
     --lighter-color: #fffaeb;
-    --body-color: #eeeeee;
+    --overlay-color: rgba(255, 250, 235, 0.8);
+    --very-light-color: #fffef6;
+    --body-color: #FaFaFa;
     --box-shadow-color: #aaaaaa;
+    --dark-box-shadow-color: #444444;
     --font-color: #222222;
     --opposite-font-color: #ffffff;
-    --top-bottom-box-color: #F2F2F2;
+    --top-bottom-box-color: #ffffff;
 }
