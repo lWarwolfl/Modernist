@@ -7,12 +7,14 @@
     box-shadow: 0 -2px 4px -3px var(--box-shadow-color);
     backdrop-filter: blur(5px);
 }
+.footer-box.no-box{
+    background-color: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+}
 .footer-part{
     float: left;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: left;
+    display: inline-block;
     width: 25%;
     height: 150px;
 }
@@ -21,6 +23,7 @@
     justify-content: center;
 }
 .footer-part-title{
+    float: left;
     width: 100%;
     font-family: var(--font);
     font-weight: 700;
@@ -31,16 +34,19 @@
     margin-bottom: 10px;
 }
 .footer-part-border{
+    float: left;
     width: 60%;
     height: 0;
     border-bottom: 2px solid var(--first-color);
     margin-bottom: 10px;
 }
 .footer-link-container{
+    float: left;
     width: 100%;
     height: min-content;
 }
 .footer-link{
+    float: left;
     display: inline-block;
     width: 100%;
     font-family: var(--font);

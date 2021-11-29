@@ -1,0 +1,25 @@
+body{
+    overflow-x: hidden;
+}
+.loading-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--body-color);
+    z-index: 10000;
+    transition: 500ms;
+}
+.loading-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 150px;
+    transition: 500ms;
+}

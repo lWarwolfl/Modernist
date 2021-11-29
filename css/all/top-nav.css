@@ -1,6 +1,19 @@
 .nav-box{
     width: 100%;
+    height: 80px;
+    padding: 20px 0;
+    background-color: var(--top-bottom-box-color);
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+}
+.nav-box.home{
     height: 40px;
+    padding: 0 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+.nav-box.no-box{
+    background-color: transparent;
+    box-shadow: none;
 }
 .top-nav{
     float: left;
@@ -94,6 +107,9 @@ body .material-icons-outlined{
 
 @media screen and (max-width: 900px) {
     body .nav-box{
+        display: block;
+    }
+    body .nav-box-fix{
         display: block;
     }
     body .top-nav{

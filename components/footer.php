@@ -37,7 +37,7 @@
         </div>
 
         <div class="full-width flex column center">
-            <a href="#" class="logo-box flex row right">
+            <a href="#" class="logo-box">
                 <div class="logo-animator"></div>
                 <div class="logo-name">Modernist</div>
             </a>

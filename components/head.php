@@ -1,17 +1,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--title loader-->
 <title><?=$title?> - Modernist</title>
+<link rel="icon" type="image/x-icon" href="image/fav-icon/fav-icon.svg">
 
-<!--local files-->
-<link rel="stylesheet" href="css/root-light.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/top-nav.css">
-<link rel="stylesheet" href="css/hero-box.css">
-<link rel="stylesheet" href="css/card-box.css">
-<link rel="stylesheet" href="css/story-card.css">
-<link rel="stylesheet" href="css/team-card.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/category-card.css">
+<!--css files loader-->
+<?php
+if (count($load_css)){
+    for ($i = 0; $i < count($load_css); $i++)
+    {
+        echo '<link rel="stylesheet" href="' . $load_css[$i] . '">';
+    }
+}
+if (count($theme_css)){
+    for ($i = 0; $i < count($theme_css); $i++)
+    {
+        echo '<link rel="stylesheet" href="' . $theme_css[$i] . '">';
+    }
+}
+if (count($page_css)){
+    for ($i = 0; $i < count($page_css); $i++)
+    {
+        echo '<link rel="stylesheet" href="' . $page_css[$i] . '">';
+    }
+}
+?>
 
 <!--google fonts-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">

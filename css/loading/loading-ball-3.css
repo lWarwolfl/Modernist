@@ -1,0 +1,45 @@
+@keyframes ball1 {
+    0%   {background-color: var(--first-color); width: 20px; height: 20px; margin: 0 5px}
+    16.6%  {background-color: var(--second-color); width: 30px; height: 30px; margin: 0 0}
+    33.2% {background-color: var(--first-color); width: 20px; height: 20px; margin: 0 5px}
+}
+@keyframes ball2 {
+    33.2%   {background-color: var(--first-color); width: 20px; height: 20px; margin: 0 5px}
+    49.3%  {background-color: var(--second-color); width: 30px; height: 30px; margin: 0 0}
+    66.4% {background-color: var(--first-color); width: 20px; height: 20px; margin: 0 5px}
+}
+@keyframes ball3 {
+    66.4%   {background-color: var(--first-color); width: 20px; height: 20px; margin: 0 5px}
+    83.2%  {background-color: var(--second-color); width: 30px; height: 30px; margin: 0 0}
+    100% {background-color: var(--first-color); width: 20px; height: 20px; margin: 0 5px}
+}
+
+.loading-ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin: 0 5px;
+    background-color: var(--first-color);
+}
+.loading-ball.ball1{
+    animation-name: ball1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.loading-ball.ball2{
+    animation-name: ball2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.loading-ball.ball3{
+    animation-name: ball3;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.loading-container.ball-3{
+    border-radius: 200px;
+    background-color: var(--light-color);
+}

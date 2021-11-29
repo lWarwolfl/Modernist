@@ -46,6 +46,7 @@ input:focus,button:focus{
     transition: 0.4s;
 }
 .logo-name{
+    float: right;
     width: 170px;
     height: 40px;
     line-height: 40px;
@@ -171,6 +172,14 @@ body .flex.row.center{
         width: 100%;
         margin: 0;
         padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body .screen-fix{
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
     }
 }
 

@@ -7,6 +7,11 @@
     box-shadow: 0 2px 4px -2px var(--box-shadow-color);
     backdrop-filter: blur(5px);
 }
+.hero-box.no-box{
+    background-color: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+}
 .hero-box-stats-container{
     width: 100%;
     height: min-content;
@@ -99,7 +104,7 @@
     width: 50%;
     height: 300px;
     border-radius: 20px;
-    background-image: url("../image/svg/hero-image.svg");
+    background-image: url("../../image/svg/hero-image.svg");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -206,5 +211,26 @@
     }
     .hero-box-stats-number{
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-box-container{
+        padding: 20px;
+    }
+    .hero-box-title{
+        font-size: 30px;
+    }
+    .hero-box-stats{
+        width: 21.25%;
+        height: unset;
+        padding-bottom: 21.25%;
+        margin-right: 5%;
+    }
+    .hero-box-stats-number{
+        position: absolute;
+        width: 90%;
+        top: calc(50% - 30px);
+        left: 5%;
     }
 }
