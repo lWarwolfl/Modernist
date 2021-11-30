@@ -1,5 +1,5 @@
 <div id="contact" class="footer-box">
-    <div class="screen-fix flex column center">
+    <div class="screen-fix">
         <div class="full-width">
             <div class="footer-part">
                 <div class="footer-part-title">Contact us</div>

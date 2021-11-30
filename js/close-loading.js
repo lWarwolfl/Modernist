@@ -1,4 +1,4 @@
 $(window).on('load',function (){
-    $('.loading-screen').css('display','none');
+    $('.loading-screen').remove();
     $('body').css('overflow-x','unset');
 });

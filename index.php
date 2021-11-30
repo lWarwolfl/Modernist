@@ -5,7 +5,14 @@ session_start();
 <html lang="en">
 <head>
     <?php
-    $load_css = array('css/loading/loading.css','css/loading/loading-ball-3.css');
+    include 'components/setting.php';
+    if ($loading_type == 'none'){
+        $load_css = array();
+    }
+    if ($loading_type == 'ball-3')
+    {
+        $load_css = array('css/loading/loading.css','css/loading/loading-ball-3.css');
+    }
     $theme_css = array('css/theme/root-light.css');
     $page_css = array('css/all/main.css','css/all/top-nav.css','css/all/footer.css', 'css/home-page/hero-box.css','css/home-page/card-box.css',
         'css/home-page/story-card.css','css/home-page/team-card.css','css/home-page/category-card.css');
@@ -15,13 +22,18 @@ session_start();
     ?>
 </head>
 <body>
-<div class="loading-screen">
-    <div class="loading-container ball-3">
-        <div class="loading-ball ball1"></div>
-        <div class="loading-ball ball2"></div><br>
-        <div class="loading-ball ball3"></div>
-    </div>
-</div>
+<?php
+if ($loading_type == 'ball-3'){
+    echo '<div class="loading-screen">
+              <div class="loading-container ball-3">
+                <div class="loading-ball ball1"></div>
+                <div class="loading-ball ball2"></div><br>
+                <div class="loading-ball ball3"></div>
+              </div>
+          </div>';
+}
+?>
+
 
 <div class="main">
     <?php
@@ -99,12 +111,14 @@ session_start();
 </div>
 
 <?php
-if (!$_SESSION['loaded']){
-    echo '<script src="js/loading.js"></script>';
-    $_SESSION['loaded'] = true;
-}
-else{
-    echo '<script src="js/close-loading.js"></script>';
+if ($loading_type != 'none'){
+    if (!$_SESSION['loaded']){
+        echo '<script src="js/loading.js"></script>';
+        $_SESSION['loaded'] = true;
+    }
+    else{
+        echo '<script src="js/close-loading.js"></script>';
+    }
 }
 ?>
 

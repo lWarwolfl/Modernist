@@ -4,7 +4,7 @@ $(window).on('load',function (){
         setTimeout(function (){
             $('.loading-screen').css('opacity','0');
             setTimeout(function (){
-                $('.loading-screen').css('display','none');
+                $('.loading-screen').remove();
                 $('body').css('overflow-x','unset');
             },500);
         },500);
