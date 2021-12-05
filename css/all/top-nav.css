@@ -18,10 +18,11 @@
 .top-nav{
     float: left;
     position: relative;
+    text-align: center;
     height: 100%;
     width: calc(100% - 320px);
 }
-.top-nav-link{
+.top-nav .link{
     display: inline-block;
     font-family: var(--font);
     font-weight: 400;
@@ -33,15 +34,15 @@
     margin: 0 15px;
     border-radius: 20px;
 }
-.top-nav-link:hover{
+.top-nav .link:hover{
     margin: 0 8px;
     padding: 12px;
     background-color: var(--lighter-color);
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
 .sign-button{
+    float: left;
     display: inline-block;
-    float: right;
     width: 100px;
     height: 40px;
     border-radius: 20px;
@@ -60,14 +61,14 @@
     box-shadow: 0 4px 6px var(--box-shadow-color);
     background-position: 135% 100%;
 }
-body .material-icons-outlined{
+body .material-icons-round{
     font-size: 17px;
     vertical-align: text-bottom;
 }
-.top-search-bar{
+.top-nav .search-bar{
     position: absolute;
     display: inline-block;
-    right: calc(50% - 240px);
+    right: calc(50% - 250px);
     width: 0;
     height: 40px;
     border-radius: 20px;
@@ -75,10 +76,10 @@ body .material-icons-outlined{
     box-shadow: 0 2px 4px -2px var(--box-shadow-color);
     transition: 0.35s;
 }
-.top-search-bar:hover{
+.top-nav .search-bar:hover{
     box-shadow: 0 4px 6px var(--box-shadow-color);
 }
-.top-search-input{
+.top-nav .search-input{
     height: 100%;
     width: 100%;
     padding-right: 40px;
@@ -89,10 +90,10 @@ body .material-icons-outlined{
     color: var(--font-color);
     background-color: var(--lighter-color);
 }
-.top-search-input:hover{
+.top-nav .search-input:hover{
     background-color: var(--light-hover-color);
 }
-.top-search-button{
+.top-nav .search-button{
     position: absolute;
     top: 0;
     right: 0;
@@ -106,19 +107,10 @@ body .material-icons-outlined{
 }
 
 @media screen and (max-width: 900px) {
-    body .nav-box{
-        display: block;
-    }
-    body .nav-box-fix{
-        display: block;
-    }
     body .top-nav{
         display: none;
     }
     .sign-button{
         float: right;
-    }
-    .logo-box.top{
-        float: left;
     }
 }

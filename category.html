@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--$count = array('Recent' => '48','Art' => '125','Food' => '81','Health' => '97',
+        'Lifestyle' => '142','Travel' => '32','Sports' => '67','Technology' => '56',
+        'Gaming' => '139','Design' => '27','Music' => '160','Movie' => '168');
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Modernist</title>
+    <link rel="icon" type="image/x-icon" href="image/fav-icon/fav-icon.svg">
+
+    <!--css files loader-->
+    <link rel="stylesheet" href="css/theme/root-light.css">
+    <link rel="stylesheet" href="css/all/main.css">
+    <link rel="stylesheet" href="css/all/top-nav.css">
+    <link rel="stylesheet" href="css/all/footer.css">
+    <link rel="stylesheet" href="css/home-page/card-box.css">
+    <link rel="stylesheet" href="css/category/category-page.css">
+    <link rel="stylesheet" href="css/category/side-bar.css">
+    <link rel="stylesheet" href="css/category/story-link.css">
+    <link rel="stylesheet" href="css/home-page/story-card.css">
+
+    <!--js files-->
+    <script src="js/search-field.js" defer></script>
+    <script src="js/smooth-scroll.js" defer></script>
+    <script src="js/show-tag.js" defer></script>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--fontawesome cdn-->
+    <script src="https://kit.fontawesome.com/23b8629dae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="nav-box flex column center">
+    <div class="screen-fix">
+        <a href="#" class="logo-box top">
+            <div class="logo-animator"></div>
+            <div class="logo-name">Modernist</div>
+        </a>
+        <nav class="top-nav flex row center">
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="#popular">Popular</a>
+            <a class="link" href="index.html#story">Categories</a>
+            <a class="link" href="index.html#team">Our team</a>
+            <a class="link" href="#contact">Contact us</a>
+            <a id="top-search-expand" class="link" href="#" onclick="expand_search()"><span class="material-icons-round">search</span></a>
+            <form id="top-search-bar" class="search-bar">
+                <label id="top-search-button" class="search-button"><span class="material-icons-round">search</span></label>
+                <input id="top-search-input" type="text" class="search-input" placeholder="Search...">
+            </form>
+        </nav>
+        <a class="sign-button" href="#">LOGIN <span class="material-icons-round">login</span></a>
+    </div>
+</header>
+
+<main class="main">
+    <section class="content-box hero">
+        <article class="screen-fix flex row left">
+            <aside class="side-bar">
+                <div class="top-card">
+                    <div class="image" style="background-image: url('image/category-icon/category-art.jpeg')"></div>
+                    <div class="text flex column center">
+                        <h2 class="title">Art category</h2>
+                        <span class="title bold">125 stories</span>
+                        <p class="description">Lorem ipsum dolor sit amet, sed diam nonumy …</p>
+                    </div>
+                </div>
+
+                <div class="category-bar">
+                    <h1 class="title"><span class="material-icons-round">category</span> Categories</h1>
+                    <a href="category.html?category=Recent" class="link">Recent</a>
+                    <a href="category.html?category=Art" class="link">Art</a>
+                    <a href="category.html?category=Food" class="link">Food</a>
+                    <a href="category.html?category=Health" class="link">Health</a>
+                    <a href="category.html?category=Lifestyle" class="link">Lifestyle</a>
+                    <a href="category.html?category=Travel" class="link">Travel</a>
+                    <a href="category.html?category=Sports" class="link">Sports</a>
+                    <a href="category.html?category=Technology" class="link">Technology</a>
+                    <a href="category.html?category=Gaming" class="link">Gaming</a>
+                    <a href="category.html?category=Design" class="link">Design</a>
+                    <a href="category.html?category=Music" class="link">Music</a>
+                    <a href="category.html?category=Movie" class="link">Movie</a>
+                </div>
+            </aside>
+
+            <aside class="hero-image-box">
+                <div class="hero-image" style="background-image: url('image/category-original/category-art.jpeg')"></div>
+            </aside>
+        </article>
+    </section>
+
+    <section id="popular" class="card-box">
+        <div class="screen-fix flex column center margin-20">
+            <header class="text">
+                <section class="text-separator">
+                    <span class="title-border-first-color"></span>
+                    <h2 class="title">Popular <span class="first-color-text">stories</span></h2>
+                    <p class="description">Popular stories based on user view come up in this section. for more stories click on see more.</p>
+                </section>
+
+                <ul class="category-box">
+                    <li class="category-tag active">All</li>
+                    <li class="category-tag">Art</li>
+                    <li class="category-tag">Food</li>
+                    <li class="category-tag">Health</li>
+                    <li class="category-tag">Lifestyle</li>
+                    <li class="category-tag">Travel</li>
+                    <li class="category-tag">Sports</li>
+                    <li class="category-tag">Technology</li>
+                    <li class="category-tag">Gaming</li>
+                    <li class="category-tag">Design</li>
+                    <li class="category-tag">Music</li>
+                    <li class="category-tag">Movie</li>
+                </ul>
+            </header>
+
+            <article class="full-width all">
+                <aside class="story-card">
+                    <h2 class="tag-box">Design</h2>
+                    <span class="time-description">10 min read - April 5, 2021</span>
+                    <h2 class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</p>
+                    <div class="writer-box">
+                        <div class="writer-image" style="background-image: url('image/people/people-1.jpeg')"></div>
+                        <span class="writer-name">Rosaline Lowell</span><br>
+                        <span class="writer-job">Writer</span>
+                    </div>
+                    <a href="#" class="button-tag">Read more <span class="material-icons-round" style="font-size: 15px">east</span></a>
+                    <div class="story-image" style="background-image: url('image/story/design-1.jpeg')"></div>
+                </aside>
+
+                <aside class="story-card">
+                    <h2 class="tag-box">Technology</h2>
+                    <span class="time-description">10 min read - April 5, 2021</span>
+                    <h2 class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</p>
+                    <div class="writer-box">
+                        <div class="writer-image" style="background-image: url('image/people/people-2.jpeg')"></div>
+                        <span class="writer-name">Colbert Michaels</span><br>
+                        <span class="writer-job">Blogger</span>
+                    </div>
+                    <a href="#" class="button-tag">Read more <span class="material-icons-round" style="font-size: 15px">east</span></a>
+                    <div class="story-image" style="background-image: url('image/story/technology-1.jpeg')"></div>
+                </aside>
+
+                <aside class="story-card">
+                    <h2 class="tag-box">Lifestyle</h2>
+                    <span class="time-description">10 min read - April 5, 2021</span>
+                    <h2 class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</p>
+                    <div class="writer-box">
+                        <div class="writer-image" style="background-image: url('image/people/people-3.jpeg')"></div>
+                        <span class="writer-name">Delia Ashworth</span><br>
+                        <span class="writer-job">SEO Specialist</span>
+                    </div>
+                    <a href="#" class="button-tag">Read more <span class="material-icons-round" style="font-size: 15px">east</span></a>
+                    <div class="story-image" style="background-image: url('image/story/lifestyle-1.jpeg')"></div>
+                </aside>
+            </article>
+
+            <a href="#" class="button card-box-button">SEE MORE</a>
+        </div>
+    </section>
+</main>
+
+<footer id="contact" class="footer-box">
+    <div class="screen-fix">
+        <section class="full-width">
+            <aside class="footer-part">
+                <h2 class="footer-part-title">Contact us</h2>
+                <span class="footer-part-border"></span>
+                <div class="footer-link-container">
+                    <span class="footer-link">+12 345 678 910</span>
+                    <span class="footer-link">mail@mail.com</span>
+                </div>
+            </aside>
+
+            <aside class="footer-part">
+                <h2 class="footer-part-title">Services</h2>
+                <span class="footer-part-border"></span>
+                <div class="footer-link-container">
+                    <a href="" class="footer-link">Support</a>
+                    <a href="" class="footer-link">FAQ</a>
+                    <a href="" class="footer-link">Report an issue</a>
+                </div>
+            </aside>
+
+            <aside class="footer-part">
+                <h2 class="footer-part-title">Information</h2>
+                <span class="footer-part-border"></span>
+                <div class="footer-link-container">
+                    <a href="#about" class="footer-link">About us</a>
+                    <a href="" class="footer-link">Terms of use</a>
+                    <a href="" class="footer-link">Privacy policy</a>
+                </div>
+            </aside>
+
+            <aside class="footer-part">
+                <h2 class="footer-title">Stay in touch and join our <span class="first-color-text">newsletter</span></h2>
+                <form class="footer-submit-bar">
+                    <label class="footer-submit-button">SUBMIT</label>
+                    <input type="text" class="footer-submit-input" placeholder="Enter email...">
+                </form>
+            </aside>
+        </section>
+
+        <section class="full-width flex column center">
+            <a href="#" class="logo-box">
+                <div class="logo-animator"></div>
+                <div class="logo-name">Modernist</div>
+            </a>
+            <aside class="share-links">
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-telegram"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+                <a href=""><i class="fab fa-reddit"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </aside>
+        </section>
+    </div>
+
+    <div class="copy-rights">Copyright @ Modernist 2021</div>
+</footer>
+</body>
+</html>

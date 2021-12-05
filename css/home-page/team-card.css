@@ -12,14 +12,14 @@
 .team-card:hover{
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
-.team-card-text{
+.team-card .text-container{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.team-card-image{
+.team-card .image{
     position: absolute;
     top: -40px;
     left: calc(50% - 40px);
@@ -29,7 +29,7 @@
     background-size: cover;
     background-position: center;
 }
-.team-card-description{
+.team-card .description{
     margin-top: 50px;
     padding: 0 20px;
     text-align: justify;
@@ -43,7 +43,7 @@
     line-height: 24px;
     color: var(--font-color);
 }
-.team-card-name{
+.team-card .name{
     margin-top: 10px;
     display: inline-block;
     width: 100%;
@@ -54,7 +54,7 @@
     font-size: 16px;
     color: var(--font-color);
 }
-.team-card-job{
+.team-card .job{
     margin-top: 5px;
     display: inline-block;
     width: 100%;
@@ -65,7 +65,7 @@
     font-size: 16px;
     color: var(--font-color);
 }
-.team-card-stars{
+.team-card .stars-container{
     margin-top: 10px;
     display: inline-block;
     width: 100%;
@@ -74,7 +74,7 @@
     font-family: var(--font);
     font-weight: 400;
 }
-.team-card-stars .material-icons-round{
+.team-card .stars-container .material-icons-round{
     font-size: 20px;
     vertical-align: text-bottom;
     color: var(--first-color);
@@ -87,29 +87,29 @@
         height: 350px;
         margin-bottom: 80px;
     }
-    .team-card-image{
+    .team-card .image{
         top: -50px;
         left: calc(50% - 50px);
         width: 100px;
         height: 100px;
         border-radius: 50px;
     }
-    .team-card-description{
+    .team-card .description{
         font-size: 18px;
         margin-top: 70px;
     }
-    .team-card-name{
+    .team-card .name{
         font-size: 18px;
         margin-top: 35px;
     }
-    .team-card-job{
+    .team-card .job{
         font-size: 18px;
         margin-top: 20px;
     }
-    .team-card-stars{
+    .team-card .stars{
         margin-top: 35px;
     }
-    .team-card-stars .material-icons-round{
+    .team-card .stars .material-icons-round{
         font-size: 26px;
         margin: 0 12px;
     }
@@ -123,7 +123,7 @@
         height: unset;
         padding-bottom: 100%;
     }
-    .team-card-description{
+    .team-card .description{
         margin-top: 90px;
     }
 }

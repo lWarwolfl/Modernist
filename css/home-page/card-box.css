@@ -4,13 +4,13 @@
     padding: 30px 0;
     text-align: center;
 }
-.card-box-text{
+.card-box .text{
     position: relative;
     width: 100%;
     height:min-content;
     margin-bottom: 30px;
 }
-.card-box-title{
+.card-box .title{
     width: 100%;
     height: min-content;
     line-height: 40px;
@@ -20,7 +20,7 @@
     text-align: left;
     color: var(--font-color);
 }
-.title-description{
+.card-box .description{
     float: left;
     display: inline-block;
     width: 100%;
@@ -31,20 +31,20 @@
     text-align: left;
     color: var(--font-color);
 }
-.card-box-text-separator{
+.card-box .text-separator{
     float: left;
     position: relative;
     width: 30%;
     height:min-content;
 }
-.category-box{
+.card-box .category-box{
     float: left;
     margin-left: 5%;
     width: 65%;
     height: min-content;
     text-align: center;
 }
-.category-tag{
+.card-box .category-tag{
     cursor: pointer;
     display: inline-block;
     width: min-content;
@@ -64,24 +64,24 @@
     border: 2px solid var(--second-color);
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
-.category-tag.active{
+.card-box .category-tag.active{
     background-color: var(--second-color);
 }
-.category-tag:hover{
+.card-box .category-tag:hover{
     background-color: var(--lighter-color);
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
-.card-box-button{
+.card-box .button{
     align-self: center;
     margin-top: 30px;
     width: 120px;
 }
 
 @media screen and (max-width: 900px) {
-    .card-box-text-separator{
+    .card-box .text-separator{
         width: 100%;
     }
-    .category-box{
+    .card-box .category-box{
         width: 100%;
         margin-left: 0;
         margin-top: 30px;

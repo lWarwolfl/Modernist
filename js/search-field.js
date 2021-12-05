@@ -1,6 +1,6 @@
 function expand_search() {
-    $('.top-nav-link').css('display', 'none');
-    $('.top-search-bar').css('width', '480px');
+    $('.top-nav .link').css('display', 'none');
+    $('#top-search-bar').css('width', '500px');
 }
 document.addEventListener("click", (evt) => {
     const bar = document.getElementById("top-search-bar");
@@ -13,6 +13,6 @@ document.addEventListener("click", (evt) => {
         }
         targetElement = targetElement.parentNode;
     } while (targetElement);
-    $('.top-nav-link').css('display', 'inline-block');
-    $('.top-search-bar').css('width', '0');
+    $('.top-nav .link').css('display', 'inline-block');
+    $('#top-search-bar').css('width', '0');
 });
