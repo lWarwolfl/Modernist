@@ -5,12 +5,10 @@
     padding: 50px 0;
     background-color: var(--top-bottom-box-color);
     box-shadow: 0 -2px 4px -3px var(--box-shadow-color);
-    backdrop-filter: blur(5px);
 }
 .footer-box.no-box{
     background-color: transparent;
     box-shadow: none;
-    backdrop-filter: none;
 }
 .footer-part{
     float: left;
@@ -167,7 +165,7 @@
 
 @media screen and (max-width: 900px) {
     .footer-box {
-        padding: 30px 0;
+        padding: 30px 0 60px 0;
     }
     .footer-part{
         padding-left: 5%;
