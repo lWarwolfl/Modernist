@@ -47,6 +47,7 @@
     margin-top: 15px;
     width: 100%;
     height: min-content;
+    line-height: unset;
     font-family: var(--font);
     font-size: 18px;
     font-weight: 700;
@@ -56,6 +57,7 @@
     float: left;
     display: inline-block;
     margin-top: 15px;
+    margin-bottom: 0;
     width: 100%;
     height: min-content;
     font-family: var(--font);
@@ -109,7 +111,7 @@
     border-radius: 20px;
     font-family: var(--font);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     color: var(--font-color);
     background-color: var(--very-light-color);

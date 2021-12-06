@@ -22,9 +22,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
 
     <!--js files-->
-    <script src="js/search-field.js" defer></script>
-    <script src="js/smooth-scroll.js" defer></script>
-    <script src="js/show-tag.js" defer></script>
+    <script src="js/all/search-field.js" defer></script>
+    <script src="js/all/smooth-scroll.js" defer></script>
+    <script src="js/category/card-loader.js" defer></script>
+    <script src="js/story/card-loader.js" defer></script>
+    <script src="js/team/card-loader.js" defer></script>
+    <script src="js/story/show-tag.js" defer></script>
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,91 +127,8 @@
                 <p class="description">We have everything you need right here.</p>
             </header>
 
-            <article class="full-width">
-                <a href="category.html?category=Recent" class="category-card" style="background-image: url('image/category-square/category-recent.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Recent</div>
-                        <div class="counter">48</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Art" class="category-card" style="background-image: url('image/category-square/category-art.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Art</div>
-                        <div class="counter">125</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Food" class="category-card" style="background-image: url('image/category-square/category-food.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Food</div>
-                        <div class="counter">81</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Health" class="category-card" style="background-image: url('image/category-square/category-health.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Health</div>
-                        <div class="counter">97</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Lifestyle" class="category-card" style="background-image: url('image/category-square/category-lifestyle.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Lifestyle</div>
-                        <div class="counter">142</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Travel" class="category-card" style="background-image: url('image/category-square/category-travel.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Travel</div>
-                        <div class="counter">32</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Sports" class="category-card" style="background-image: url('image/category-square/category-sports.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Sports</div>
-                        <div class="counter">67</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Technology" class="category-card" style="background-image: url('image/category-square/category-technology.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Technology</div>
-                        <div class="counter">56</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Gaming" class="category-card" style="background-image: url('image/category-square/category-gaming.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Gaming</div>
-                        <div class="counter">139</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Design" class="category-card" style="background-image: url('image/category-square/category-design.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Design</div>
-                        <div class="counter">27</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Music" class="category-card" style="background-image: url('image/category-square/category-music.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Music</div>
-                        <div class="counter">160</div>
-                    </div>
-                </a>
-                <a href="category.html?category=Movie" class="category-card" style="background-image: url('image/category-square/category-movie.jpeg')">
-                    <div class="image-overlay"></div>
-                    <div class="overlay">
-                        <div class="name">Movie</div>
-                        <div class="counter">168</div>
-                    </div>
-                </a>
+            <article id="category-card-container" class="full-width">
+
             </article>
         </div>
     </section>
@@ -238,48 +158,8 @@
                 </ul>
             </header>
 
-            <article class="full-width all">
-                <aside class="story-card">
-                    <h2 class="tag-box">Design</h2>
-                    <span class="time-description">10 min read - April 5, 2021</span>
-                    <h2 class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</p>
-                    <div class="writer-box">
-                        <div class="writer-image" style="background-image: url('image/people/people-1.jpeg')"></div>
-                        <span class="writer-name">Rosaline Lowell</span><br>
-                        <span class="writer-job">Writer</span>
-                    </div>
-                    <a href="#" class="button-tag">Read more <span class="material-icons-round" style="font-size: 15px">east</span></a>
-                    <div class="story-image" style="background-image: url('image/story/design-1.jpeg')"></div>
-                </aside>
+            <article id="story-card-container" class="full-width all">
 
-                <aside class="story-card">
-                    <h2 class="tag-box">Technology</h2>
-                    <span class="time-description">10 min read - April 5, 2021</span>
-                    <h2 class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</p>
-                    <div class="writer-box">
-                        <div class="writer-image" style="background-image: url('image/people/people-2.jpeg')"></div>
-                        <span class="writer-name">Colbert Michaels</span><br>
-                        <span class="writer-job">Blogger</span>
-                    </div>
-                    <a href="#" class="button-tag">Read more <span class="material-icons-round" style="font-size: 15px">east</span></a>
-                    <div class="story-image" style="background-image: url('image/story/technology-1.jpeg')"></div>
-                </aside>
-
-                <aside class="story-card">
-                    <h2 class="tag-box">Lifestyle</h2>
-                    <span class="time-description">10 min read - April 5, 2021</span>
-                    <h2 class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolore magna aliquyam erat.</p>
-                    <div class="writer-box">
-                        <div class="writer-image" style="background-image: url('image/people/people-3.jpeg')"></div>
-                        <span class="writer-name">Delia Ashworth</span><br>
-                        <span class="writer-job">SEO Specialist</span>
-                    </div>
-                    <a href="#" class="button-tag">Read more <span class="material-icons-round" style="font-size: 15px">east</span></a>
-                    <div class="story-image" style="background-image: url('image/story/lifestyle-1.jpeg')"></div>
-                </aside>
             </article>
 
             <a href="#" class="button card-box-button">SEE MORE</a>
@@ -294,70 +174,8 @@
                 <p class="description">Our team is made of professionals who will provide you with great stories and cool tips and tricks!</p>
             </header>
 
-            <article class="margin-50 full-width">
-                <aside class="team-card">
-                    <div class="image" style="background-image: url('image/people/people-1.jpeg')"></div>
-                    <div class="text-container">
-                        <p class="description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</p>
-                        <h2 class="name">Rosaline Lowell</h2>
-                        <h3 class="job">Writer</h3>
-                        <div class="stars-container">
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                        </div>
-                    </div>
-                </aside>
+            <article id="team-card-container" class="margin-50 full-width">
 
-                <aside class="team-card">
-                    <div class="image" style="background-image: url('image/people/people-2.jpeg')"></div>
-                    <div class="text-container">
-                        <p class="description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</p>
-                        <h2 class="name">Colbert Michaels</h2>
-                        <h3 class="job">Blogger</h3>
-                        <div class="stars-container">
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                        </div>
-                    </div>
-                </aside>
-
-                <aside class="team-card">
-                    <div class="image" style="background-image: url('image/people/people-3.jpeg')"></div>
-                    <div class="text-container">
-                        <p class="description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</p>
-                        <h2 class="name">Delia Ashworth</h2>
-                        <h3 class="job">SEO Specialist</h3>
-                        <div class="stars-container">
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                        </div>
-                    </div>
-                </aside>
-
-                <aside class="team-card">
-                    <div class="image" style="background-image: url('image/people/people-4.jpeg')"></div>
-                    <div class="text-container">
-                        <p class="description">Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …</p>
-                        <h2 class="name">Earl Pryor</h2>
-                        <h3 class="job">Programmer</h3>
-                        <div class="stars-container">
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                            <span class="material-icons-round">grade</span>
-                        </div>
-                    </div>
-                </aside>
             </article>
         </div>
     </section>

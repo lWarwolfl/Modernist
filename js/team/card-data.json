@@ -1,0 +1,6 @@
+{"card":[
+  {"name": "Rosaline Lowell","job": "Writer","description": "Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …","stars": 5,"image": "people-1.jpeg"},
+  {"name": "Colbert Michaels","job": "Blogger","description": "Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …","stars": 5,"image": "people-2.jpeg"},
+  {"name": "Delia Ashworth","job": "SEO Specialist","description": "Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …","stars": 5,"image": "people-3.jpeg"},
+  {"name": "Earl Pryor","job": "Programmer","description": "Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore et dolore …","stars": 5,"image": "people-4.jpeg"}
+]}
