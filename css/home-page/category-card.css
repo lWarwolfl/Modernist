@@ -18,50 +18,65 @@
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0.5;
     box-shadow: none;
+    background-color: var(--overlay-color);
+}
+.category-card:hover .icon-container{
+    opacity: 0.8;
+}
+.category-card:hover .name{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
 }
 .category-card .overlay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: calc(50% - 45px);
-    left: calc(50% - 45px);
-    width: 90px;
+    left: calc(50% - 90px);
+    width: 180px;
     height: 90px;
+    padding: 0 15px;
     border-radius: 20px;
     background-color: var(--overlay-color-solid);
     box-shadow: 0 2px 4px -2px var(--dark-box-shadow-color);
     z-index: 10;
 }
 .category-card .name{
-    margin-top: calc(50% - 30px);
     display: inline-block;
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
+    width: calc(100% - 70px);
+    height: min-content;
     font-family: var(--font);
     font-weight: 400;
     font-size: 17px;
     color: var(--font-color);
+    transition: 400ms;
 }
-.category-card .counter{
-    display: inline-block;
+.category-card .name .counter{
+    margin-top: 10px;
     width: 100%;
-    height: 30px;
-    line-height: 30px;
-    font-family: var(--font);
     font-weight: 700;
     font-size: 19px;
-    color: var(--font-color);
 }
-.category-card .time{
+.category-card .icon-container{
+    float: left;
     display: inline-block;
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-    font-family: var(--font);
-    font-weight: 400;
-    font-size: 15px;
-    color: var(--font-color);
+    position: relative;
+    width: 54px;
+    height: 54px;
+    margin-right: 10px;
+    line-height: 57px;
+    font-size: 23px;
+    color: var(--opposite-font-color);
+    text-align: center;
+    border-radius: 27px;
+    background-image: var(--gradient);
+    background-size: 200% 200%;
+    background-position: 50% 100%;
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
 
 @media screen and (max-width: 900px) {

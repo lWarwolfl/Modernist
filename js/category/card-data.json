@@ -1,14 +1,14 @@
 {"card":[
-  {"category": "Recent","count": "48","image": "category-recent.jpeg"},
-  {"category": "Art","count": "125","image": "category-art.jpeg"},
-  {"category": "Food","count": "81","image": "category-food.jpeg"},
-  {"category": "Health","count": "97","image": "category-health.jpeg"},
-  {"category": "Lifestyle","count": "142","image": "category-lifestyle.jpeg"},
-  {"category": "Travel","count": "32","image": "category-travel.jpeg"},
-  {"category": "Sports","count": "67","image": "category-sports.jpeg"},
-  {"category": "Technology","count": "56","image": "category-technology.jpeg"},
-  {"category": "Gaming","count": "139","image": "category-gaming.jpeg"},
-  {"category": "Design","count": "27","image": "category-design.jpeg"},
-  {"category": "Music","count": "160","image": "category-music.jpeg"},
-  {"category": "Movie","count": "168","image": "category-movie.jpeg"}
+  {"category": "Recent","count": "48","image": "category-recent.jpeg","icon": "fa-history"},
+  {"category": "Art","count": "125","image": "category-art.jpeg","icon": "fa-paint-brush"},
+  {"category": "Food","count": "81","image": "category-food.jpeg","icon": "fa-hamburger"},
+  {"category": "Health","count": "97","image": "category-health.jpeg","icon": "fa-heartbeat"},
+  {"category": "Lifestyle","count": "142","image": "category-lifestyle.jpeg","icon": "fa-mug-hot"},
+  {"category": "Travel","count": "32","image": "category-travel.jpeg","icon": "fa-plane"},
+  {"category": "Sports","count": "67","image": "category-sports.jpeg","icon": "fa-futbol"},
+  {"category": "Technology","count": "56","image": "category-technology.jpeg","icon": "fa-robot"},
+  {"category": "Gaming","count": "139","image": "category-gaming.jpeg","icon": "fa-gamepad"},
+  {"category": "Design","count": "27","image": "category-design.jpeg","icon": "fa-pencil-ruler"},
+  {"category": "Music","count": "160","image": "category-music.jpeg","icon": "fa-headphones"},
+  {"category": "Movie","count": "168","image": "category-movie.jpeg","icon": "fa-video"}
 ]}

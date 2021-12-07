@@ -75,7 +75,7 @@
     background-position: 50% 100%;
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
-.header-box .stats:hover .header-box .stats-icon-container{
+.header-box .stats:hover .stats-icon-container{
     background-position: 150% 100%;
 }
 .header-box .stats-icon-container .material-icons-round{
