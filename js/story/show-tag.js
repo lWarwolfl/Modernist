@@ -1,9 +1,12 @@
+//add onclick event to all popular category tags
 $('.category-box .category-tag').on('click', function (event) {
     event.preventDefault();
 
+    //change the active category tag
     $('.category-box .category-tag').removeClass('active');
     $(this).addClass('active');
 
+    //read card data from json file according to tag name and display the cards
     let category = $(this).html().toLowerCase();
     $.getJSON('js/story/card-data.json', function(data){
         let container = $('#story-card-container');

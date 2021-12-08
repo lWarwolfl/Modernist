@@ -26,11 +26,11 @@
     <script src="js/all/smooth-scroll.js" defer></script>
     <script src="js/story/card-loader.js" defer></script>
     <script src="js/story/show-tag.js" defer></script>
+    <script src="js/category/page-loader.js" defer></script>
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!--fontawesome cdn-->
@@ -49,13 +49,13 @@
             <a class="link" href="index.html#story">Categories</a>
             <a class="link" href="index.html#team">Our team</a>
             <a class="link" href="#contact">Contact us</a>
-            <a id="top-search-expand" class="link" href="#" onclick="expand_search()"><span class="material-icons-round">search</span></a>
+            <a id="top-search-expand" class="link" href="#" onclick="expand_search()"><i class="fas fa-search"></i></a>
             <form id="top-search-bar" class="search-bar">
-                <label id="top-search-button" class="search-button"><span class="material-icons-round">search</span></label>
+                <label id="top-search-button" class="search-button"><i class="fas fa-search"></i></label>
                 <input id="top-search-input" type="text" class="search-input" placeholder="Search...">
             </form>
         </nav>
-        <a class="sign-button" href="#">LOGIN <span class="material-icons-round">login</span></a>
+        <a class="sign-button" href="#">LOGIN <i class="fas fa-sign-in-alt"></i></a>
     </div>
 </header>
 
@@ -64,7 +64,7 @@
         <article class="screen-fix flex row left">
             <aside class="side-bar">
                 <div class="top-card">
-                    <div class="image" style="background-image: url('image/category-high-res/category-art.jpeg')"></div>
+                    <div class="image" style="background-image: url('image/category-icon/category-art.jpeg')"></div>
                     <div class="text flex column center">
                         <h2 class="title">Art category</h2>
                         <span class="title bold">125 stories</span>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="category-bar">
-                    <h1 class="title"><span class="material-icons-round">category</span> Categories</h1>
+                    <h1 class="title"><i class="fas fa-sitemap"></i> Categories</h1>
                     <a href="category.html?category=Recent" class="link">Recent</a>
                     <a href="category.html?category=Art" class="link">Art</a>
                     <a href="category.html?category=Food" class="link">Food</a>
@@ -97,7 +97,7 @@
 
     <section id="popular" class="card-box">
         <div class="screen-fix flex column center margin-20">
-            <header class="text">
+            <header class="text-box">
                 <section class="text-separator">
                     <span class="title-border-first-color"></span>
                     <h2 class="title">Popular <span class="first-color-text">stories</span></h2>

@@ -72,7 +72,7 @@
     font-family: var(--font);
     font-weight: 400;
 }
-.top-card .stars .material-icons-round{
+.top-card .stars svg{
     font-size: 20px;
     vertical-align: text-bottom;
     color: var(--first-color);
@@ -101,13 +101,13 @@
     letter-spacing: 1px;
     text-align: left;
     color: var(--font-color);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
-.category-bar .title .material-icons-round{
-    font-size: 22px;
+.category-bar .title svg{
+    font-size: 20px;
     vertical-align: text-bottom;
     color: var(--first-color);
-    margin-right: 5px;
+    margin-right: 3px;
 }
 .category-bar .link{
     display: block;
@@ -120,7 +120,7 @@
     font-size: 14px;
     color: var(--font-color);
     margin-bottom: 8px;
-    border-left: 2px solid var(--second-color);
+    border-left: 2px solid var(--first-color);
     padding-left: 7px;
 }
 .category-bar .link:hover{
@@ -159,8 +159,8 @@
     .top-card .stars{
         margin-top: 35px;
     }
-    .top-card .stars .material-icons-round{
-        font-size: 26px;
+    .top-card .stars svg{
+        font-size: 24px;
         margin: 0 12px;
     }
 }

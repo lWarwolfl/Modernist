@@ -1,3 +1,4 @@
+//read card data from json file and display the cards
 $.getJSON('js/category/card-data.json', function(data){
     for (let i = 0;i < data['card'].length;i++)
     {

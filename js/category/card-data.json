@@ -1,5 +1,5 @@
 {"card":[
-  {"category": "Recent","count": "48","image": "category-recent.jpeg","icon": "fa-history"},
+  {"category": "Recent","status": "Lorem ipsum dolor sit amet, sed diam nonumy …","title": "Lorem ipsum dolor sit amet","description": "Recent","count": "48","image": "category-recent.jpeg","icon": "fa-history"},
   {"category": "Art","count": "125","image": "category-art.jpeg","icon": "fa-paint-brush"},
   {"category": "Food","count": "81","image": "category-food.jpeg","icon": "fa-hamburger"},
   {"category": "Health","count": "97","image": "category-health.jpeg","icon": "fa-heartbeat"},

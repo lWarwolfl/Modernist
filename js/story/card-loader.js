@@ -1,3 +1,4 @@
+//reads card data from json file and displays the cards
 $.getJSON('js/story/card-data.json', function(data){
     let category = 'all';
     for (let i = 0;i < data['card'][category].length;i++)
@@ -14,7 +15,7 @@ $.getJSON('js/story/card-data.json', function(data){
             '                        <span class="writer-name">' + cards[i]['writer']['name'] + '</span><br>\n' +
             '                        <span class="writer-job">' + cards[i]['writer']['job'] + '</span>\n' +
             '                    </div>\n' +
-            '                    <a href="#" class="button-tag">Read more <span class="material-icons-round" style="font-size: 15px">east</span></a>\n' +
+            '                    <a href="#" class="button-tag">Read more <i class="fas fa-arrow-right"></i></a>\n' +
             '                    <div class="story-image" style="background-image: url(\'image/story/' + cards[i]['image'] + '\')"></div>\n' +
             '                </aside>\n'
         );
