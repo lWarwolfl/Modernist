@@ -28,6 +28,7 @@
 }
 .category-card:hover .icon-container{
     opacity: 0.8;
+    margin-right: 0;
 }
 .category-card:hover .name{
     overflow: hidden;
@@ -58,7 +59,6 @@
     font-weight: 400;
     font-size: 17px;
     color: var(--font-color);
-    transition: 400ms;
 }
 .category-card .name .counter{
     margin-top: 10px;

@@ -1,0 +1,119 @@
+.comment{
+    float: left;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--lighter-color);
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+}
+.comment:hover{
+    box-shadow: 0 4px 6px -1px var(--box-shadow-color);
+}
+.comment .sender-box{
+    width: 100%;
+    height: 50px;
+}
+.comment .sender-image{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+}
+.comment .sender-name{
+    float: left;
+    display: inline-block;
+    width: min-content;
+    white-space: nowrap;
+    height: 30px;
+    line-height: 30px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    color: var(--font-color);
+}
+.comment .sender-tag{
+    display: inline-block;
+    width: min-content;
+    white-space: nowrap;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 27px;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: var(--font-color);
+    background-color: var(--very-light-color);
+    border: 2px solid var(--second-color);
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+}
+.comment .text{
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
+    height: min-content;
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--font-color);
+}
+.comment textarea.text{
+    margin-top: 0;
+    min-height: 80px;
+}
+.comment .bottom-box{
+    clear: both;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+}
+.comment .time{
+    float: left;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 13px;
+    color: var(--font-color);
+}
+.comment .button{
+    cursor: pointer;
+    float: right;
+    display: inline-block;
+    width: min-content;
+    height: 35px;
+    padding: 0 10px;
+    margin-top: 0;
+    margin-left: 5px;
+    line-height: 35px;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--opposite-font-color);
+    background-image: var(--gradient);
+    background-size: 200% 200%;
+    background-position: 50% 100%;
+    box-shadow: 0 2px 4px -2px var(--box-shadow-color);
+}
+.comment .button:hover{
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+    background-position: 150% 100%;
+}
+.comment .button svg{
+    font-size: 12px;
+    margin-left: 3px;
+}

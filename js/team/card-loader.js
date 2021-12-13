@@ -11,11 +11,13 @@ $.getJSON('js/team/card-data.json', function(data){
 
         $('#team-card-container').append(
             '                <aside class="team-card">\n' +
-            '                    <div class="image" style="background-image: url(\'image/people/' + data['card'][i]['image'] + '\')"></div>\n' +
-            '                    <p class="description">' + data['card'][i]['description'] + '</p>\n' +
-            '                    <h2 class="name">' + data['card'][i]['name'] + '</h2>\n' +
-            '                    <h3 class="job">' + data['card'][i]['job'] + '</h3>\n' +
+            '                    <div class="person">\n' +
+            '                       <div class="image" style="background-image: url(\'image/people/' + data['card'][i]['image'] + '\')"></div>\n' +
+            '                       <h2 class="intro bold">' + data['card'][i]['name'] + '</h2>\n' +
+            '                       <h3 class="intro">' + data['card'][i]['job'] + '</h3>\n' +
+            '                    </div>\n' +
             '                    <div class="stars-container">\n' + stars + '</div>\n' +
+            '                    <p class="description">' + data['card'][i]['description'] + '</p>\n' +
             '                </aside>'
         );
     }

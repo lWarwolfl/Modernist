@@ -1,45 +1,60 @@
 .side-bar{
-    display: table-cell;
+    position: relative;
     width: 200px;
     height: 100%;
 }
-.top-card{
+.side-bar.desktop{
+    display: table-cell;
+}
+.side-bar.mobile{
+    display: none;
+    height: 80px;
+    width: 100%;
+    margin-top: 30px;
+}
+.information-card{
     float: left;
     display: inline-block;
     position: relative;
     text-align: center;
     width: 200px;
-    height: 200px;
+    min-height: 200px;
+    height: min-content;
     border-radius: 20px;
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
     background-color: var(--lighter-color);
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
-.top-card:hover{
+.information-card:hover{
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
-.top-card .text{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.information-card.mobile{
+    float: left;
+    width: calc(75% - 20px);
+    height: 80px;
+    min-height: unset;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: left;
 }
-.top-card .image{
-    position: absolute;
-    top: -30px;
-    left: calc(50% - 30px);
+.information-card .image{
+    display: inline-block;
+    margin-top: -30px;
     width: 60px;
     height: 60px;
     border-radius: 30px;
     background-size: cover;
     background-position: center;
 }
-.top-card .description{
+.information-card.mobile .image{
+    float: left;
+    margin-top: 0;
+    margin-right: 10px;
+}
+.information-card .description{
     margin-top: 10px;
     padding: 0 20px;
-    text-align: justify;
-    text-align-last: left;
     display: inline-block;
     width: 100%;
     height: min-content;
@@ -49,7 +64,15 @@
     line-height: 24px;
     color: var(--font-color);
 }
-.top-card .title{
+.information-card.mobile .description{
+    float: left;
+    margin-top: 0;
+    width: calc(100% - 230px);
+    height: 60px;
+    line-height: 30px;
+    padding: 0;
+}
+.information-card .title{
     margin-top: 10px;
     display: inline-block;
     width: 100%;
@@ -60,23 +83,37 @@
     font-size: 16px;
     color: var(--font-color);
 }
-.top-card .title.bold{
+.information-card .title.bold{
     font-weight: 700;
 }
-.top-card .stars{
-    margin-top: 10px;
+.information-card.mobile .title{
+    float: left;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0;
+}
+.information-card.mobile .image-box{
+    display: inline-block;
+    float: left;
+    width: 220px;
+    height: 60px;
+    margin-right: 10px;
+}
+.information-card .stars{
+    margin-top: 5px;
     display: inline-block;
     width: 100%;
     height: 30px;
     line-height: 30px;
     font-family: var(--font);
     font-weight: 400;
+    vertical-align: center;
 }
-.top-card .stars svg{
-    font-size: 20px;
-    vertical-align: text-bottom;
+.information-card .stars svg{
+    font-size: 16px;
     color: var(--first-color);
-    margin: 0 5px;
+    margin: 0 2px;
 }
 .category-bar{
     float: left;
@@ -93,6 +130,17 @@
 .category-bar:hover{
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
+.category-bar.mobile{
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+    height: min-content;
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    z-index: 20000;
+}
 .category-bar .title{
     width: 100%;
     font-family: var(--font);
@@ -108,6 +156,42 @@
     vertical-align: text-bottom;
     color: var(--first-color);
     margin-right: 3px;
+}
+.category-bar-title{
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: 25%;
+    height: 80px;
+    padding: 0 10px;
+    line-height: 80px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: var(--font-color);
+    border-radius: 20px;
+    background-color: var(--lighter-color);
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+}
+.category-bar-title:hover{
+    box-shadow: 0 4px 6px -1px var(--box-shadow-color);
+}
+.category-bar-title svg.category{
+    font-size: 20px;
+    vertical-align: text-bottom;
+    color: var(--first-color);
+    margin-right: 5px;
+}
+.category-bar-title svg.expand{
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: text-bottom;
+    color: var(--first-color);
+    height: 80px;
+    line-height: 100%;
+    float: right;
 }
 .category-bar .link{
     display: block;
@@ -132,46 +216,45 @@
     padding-left: 4px;
 }
 
-@media screen and (max-width: 800px) {
-    .top-card{
-        width: 100%;
-        padding-bottom: 100%;
+@media screen and (max-width: 850px) {
+    .side-bar.desktop{
+        display: none;
     }
-    .top-card .image{
-        top: -50px;
-        left: calc(50% - 50px);
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-    }
-    .top-card .description{
-        font-size: 18px;
-        margin-top: 20px;
-    }
-    .top-card .name{
-        font-size: 18px;
-        margin-top: 35px;
-    }
-    .top-card .job{
-        font-size: 18px;
-        margin-top: 20px;
-    }
-    .top-card .stars{
-        margin-top: 35px;
-    }
-    .top-card .stars svg{
-        font-size: 24px;
-        margin: 0 12px;
+    .side-bar.mobile{
+        display: inline-block;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .top-card{
-        width: 100%;
-        height: unset;
-        padding-bottom: 100%;
+@media screen and (max-width: 750px) {
+    .side-bar.mobile{
+        height: min-content;
     }
-    .top-card .description{
-        margin-top: 30px;
+    .information-card.mobile{
+        width: 100%;
+        margin-right: 0;
+    }
+    .category-bar-title{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .information-card.mobile{
+        height: min-content;
+        text-align: center;
+        padding: 20px;
+    }
+    .information-card.mobile .image-box{
+        display: inline-block;
+        float: none;
+    }
+    .information-card.mobile .description{
+        float: none;
+        width: 100%;
+        height: min-content;
+        margin-top: 10px;
+    }
+    .category-bar-title{
+        padding: 0 20px;
     }
 }

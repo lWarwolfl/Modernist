@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/all/card-box.css">
     <link rel="stylesheet" href="css/category/category-page.css">
     <link rel="stylesheet" href="css/category/side-bar.css">
-    <link rel="stylesheet" href="css/home-page/story-card.css">
+    <link rel="stylesheet" href="css/story/story-page.css">
+    <link rel="stylesheet" href="css/story/comment.css">
 
     <!--jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
@@ -23,10 +24,9 @@
     <!--js files-->
     <script src="js/all/search-field.js" defer></script>
     <script src="js/all/smooth-scroll.js" defer></script>
-    <script src="js/story/card-loader.js" defer></script>
-    <script src="js/story/show-tag.js" defer></script>
-    <script src="js/category/page-loader.js" defer></script>
+    <script src="js/story/page-loader.js" defer></script>
     <script src="js/all/category-bar.js" defer></script>
+    <script src="js/story/like.js" defer></script>
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
         </a>
         <nav class="top-nav flex row center">
             <a class="link" href="index.html">Home</a>
-            <a class="link" href="#popular">Popular</a>
+            <a class="link" href="category.html#popular">Popular</a>
             <a class="link" href="index.html#story">Categories</a>
             <a class="link" href="index.html#team">Our team</a>
             <a class="link" href="#contact">Contact us</a>
@@ -81,10 +81,6 @@
                         <span class="title-border-second-color"></span>
                         <h1 class="title"></h1>
                         <p class="text"></p>
-                        <form class="search-bar">
-                            <label class="search-button"><i class="fas fa-search"></i></label>
-                            <input type="text" class="search-input" placeholder="Search...">
-                        </form>
                     </div>
                 </div>
             </aside>
@@ -111,35 +107,60 @@
         </article>
     </section>
 
-    <section id="stories" class="card-box">
+    <section class="card-box">
         <div class="screen-fix flex column center margin-20">
             <header class="text-box">
                 <span class="title-border-first-color"></span>
-                <h2 id="category-title" class="title">Popular <span class="first-color-text">stories</span></h2>
+                <h2 id="story-title" class="title"> <span class="first-color-text"></span></h2>
             </header>
 
-            <article id="story-card-category-container" class="full-width all">
-
+            <article class="full-width">
+                <pre class="main-text"></pre>
             </article>
         </div>
     </section>
 
-    <section id="popular" class="card-box">
+    <section class="card-box">
         <div class="screen-fix flex column center margin-20">
             <header class="text-box">
-                <section class="text-separator">
-                    <span class="title-border-first-color"></span>
-                    <h2 class="title">Popular <span class="first-color-text">stories</span></h2>
-                    <p class="description">Popular stories based on user view come up in this section.</p>
-                </section>
-
-                <ul class="category-box">
-
-                </ul>
+                <span class="title-border-first-color"></span>
+                <h2 class="title">Leave a comment</h2>
             </header>
 
-            <article id="story-card-container" class="full-width">
+            <article class="full-width">
+                <form class="comment">
+                    <textarea class="text" placeholder="Your comment..."></textarea>
+                    <div class="bottom-box">
+                        <span class="button">SEND</span>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </section>
 
+    <section class="card-box">
+        <div class="screen-fix flex column center margin-20">
+            <header class="text-box">
+                <span class="title-border-first-color"></span>
+                <h2 class="title">Comments</h2>
+            </header>
+
+            <article class="full-width">
+                <form class="comment">
+                    <div class="sender-box">
+                        <div class="sender-image" style="background-image: url('image/people/people-1.jpeg')"></div>
+                        <span class="sender-name">Rosaline Lowell<br>
+                        <span class="sender-tag">Author</span>
+                        </span>
+                    </div>
+                    <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                    <div class="bottom-box">
+                        <span class="time">13 Feb, 2021 5:07 am</span>
+                        <span class="button"><i class="fas fa-chevron-down"></i></span>
+                        <span class="button">REPLY</span>
+                        <span class="button like">65 <i class="far fa-heart"></i></span>
+                    </div>
+                </form>
             </article>
         </div>
     </section>

@@ -10,7 +10,7 @@ document.addEventListener("click", (evt) => {
     let targetElement = evt.target; // clicked element
 
     do {
-        if (targetElement == bar || targetElement == button) {
+        if (targetElement === bar || targetElement === button) {
             return;
         }
         targetElement = targetElement.parentNode;

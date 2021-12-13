@@ -5,7 +5,9 @@ $.getJSON('js/story/card-data.json', function(data){
     {
         let cards = data['card'][category];
         $('#story-card-container').append(
-            '                <aside class="story-card">\n' +
+            '           <aside class="story-card">' +
+            '                 <div class="story-image" style="background-image: url(\'image/story/' + cards[i]['image'] + '\')"></div>\n' +
+            '                 <div class="text-container">\n' +
             '                    <h2 class="tag-box">' + cards[i]['category'] + '</h2>\n' +
             '                    <span class="time-description">' + cards[i]['time'] + '</span>\n' +
             '                    <h2 class="title">' + cards[i]['title'] + '</h2>\n' +
@@ -15,9 +17,9 @@ $.getJSON('js/story/card-data.json', function(data){
             '                        <span class="writer-name">' + cards[i]['writer']['name'] + '</span><br>\n' +
             '                        <span class="writer-job">' + cards[i]['writer']['job'] + '</span>\n' +
             '                    </div>\n' +
-            '                    <a href="#" class="button-tag">Read more <i class="fas fa-arrow-right"></i></a>\n' +
-            '                    <div class="story-image" style="background-image: url(\'image/story/' + cards[i]['image'] + '\')"></div>\n' +
-            '                </aside>\n'
+            '                    <a href="story.html?id=' + i + '&category=' + category + '" class="button-tag">Read more <i class="fas fa-arrow-right"></i></a>\n' +
+            '                 </div>' +
+            '           </aside>\n'
         );
     }
-})
+});

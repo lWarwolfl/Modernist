@@ -15,6 +15,7 @@ body{
 h1,h2,h3,p{
     display: block;
     font-weight: unset;
+    font-size: unset;
     margin-block-start: unset;
     margin-block-end: unset;
 }
@@ -29,13 +30,17 @@ a{
     text-decoration: none;
     color: inherit;
 }
-input,button{
+input,button,textarea{
     outline: none;
     border: none;
 }
-input:focus,button:focus{
+input:focus,button:focus,textarea{
     outline: none;
     border: none;
+}
+textarea{
+    resize: none;
+    background-color: transparent;
 }
 .logo-box{
     position: relative;
@@ -73,8 +78,6 @@ input:focus,button:focus{
     color: var(--font-color);
 }
 .logo-box:hover{
-    margin-right: 60px;
-    width: 160px;
     justify-content: center;
 }
 .logo-box:hover .logo-name{
@@ -82,7 +85,8 @@ input:focus,button:focus{
     left: 0;
     top: 0;
     width: 100%;
-    font-size: 24px;
+    font-size: 26px;
+    letter-spacing: 3px;
     color: var(--opposite-font-color);
     text-align: center;
     z-index: 100;
@@ -90,7 +94,7 @@ input:focus,button:focus{
 .logo-box:hover .logo-animator{
     width: 100%;
     box-shadow: 0 4px 6px -2px var(--box-shadow-color);
-    background-position: 130% 100%;
+    background-position: 135% 100%;
 }
 body .screen-fix{
     position: relative;
@@ -212,6 +216,19 @@ body .flex.row.center{
 }
 
 .hero-box .search-input::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--opposite-font-color);
+}
+
+.hero-text .search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--opposite-font-color);
+    opacity: 1; /* Firefox */
+}
+
+.hero-text .search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--opposite-font-color);
+}
+
+.hero-text .search-input::-ms-input-placeholder { /* Microsoft Edge */
     color: var(--opposite-font-color);
 }
 
