@@ -1,7 +1,7 @@
 //display search bar
 function expand_search() {
     $('.top-nav .link').css('display', 'none');
-    $('#top-search-bar').css('width', '500px');
+    $('#top-search-bar').css('width', '560px');
 }
 //hide search bar when user clicked outside of it
 document.addEventListener("click", (evt) => {

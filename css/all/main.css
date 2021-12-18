@@ -42,6 +42,9 @@ textarea{
     resize: none;
     background-color: transparent;
 }
+.hidden{
+    display: none;
+}
 .logo-box{
     position: relative;
     width: 220px;

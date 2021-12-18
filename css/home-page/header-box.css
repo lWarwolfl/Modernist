@@ -101,11 +101,13 @@
     float: left;
     width: 50%;
     height: 300px;
-    border-radius: 20px;
-    background-image: url("../../image/svg/hero-image.svg");
-    background-size: contain;
     background-position: right;
+    background-size: contain;
     background-repeat: no-repeat;
+}
+.hero-box .image-container svg{
+    float: right;
+    height: 100%;
 }
 .hero-box .title{
     width: 100%;
@@ -196,6 +198,9 @@
     .hero-box .image-container{
         width: 100%;
         background-position: center;
+    }
+    .hero-box .image-container svg{
+        float: none;
     }
     .hero-box .search-bar{
         width: 100%;

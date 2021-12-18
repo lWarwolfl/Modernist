@@ -64,7 +64,7 @@
 .top-nav .search-bar{
     position: absolute;
     display: inline-block;
-    right: calc(50% - 250px);
+    right: calc(50% - 280px);
     width: 0;
     height: 40px;
     border-radius: 20px;

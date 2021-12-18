@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="image/fav-icon/fav-icon.svg">
 
     <!--css files-->
-    <link rel="stylesheet" href="css/theme/root-light.css">
+    <link id="theme" rel="stylesheet" href="css/theme/root-blue-green.css">
     <link rel="stylesheet" href="css/all/main.css">
     <link rel="stylesheet" href="css/all/top-nav.css">
     <link rel="stylesheet" href="css/all/footer.css">
@@ -21,7 +21,11 @@
     <!--jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
 
+    <!--fontawesome cdn-->
+    <script src="https://kit.fontawesome.com/23b8629dae.js" crossorigin="anonymous" defer></script>
+
     <!--js files-->
+    <script src="js/all/toggle-theme.js" defer></script>
     <script src="js/all/search-field.js" defer></script>
     <script src="js/all/smooth-scroll.js" defer></script>
     <script src="js/category/card-loader.js" defer></script>
@@ -33,11 +37,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!--fontawesome cdn-->
-    <script src="https://kit.fontawesome.com/23b8629dae.js" crossorigin="anonymous" defer></script>
 </head>
-<body>
+<body class="hidden">
 <header class="header-box">
     <div class="screen-fix flex column center">
         <section class="nav-box home">
@@ -51,7 +52,8 @@
                 <a class="link" href="#story">Categories</a>
                 <a class="link" href="#team">Our team</a>
                 <a class="link" href="#contact">Contact us</a>
-                <a id="top-search-expand" class="link" href="#" onclick="expand_search()"><i class="fas fa-search"></i></a>
+                <a id="toggle-theme" class="link" onclick="toggle_theme()"><i class="fas fa-sun"></i></a>
+                <a id="top-search-expand" class="link" onclick="expand_search()"><i class="fas fa-search"></i></a>
                 <form id="top-search-bar" class="search-bar">
                     <label id="top-search-button" class="search-button"><i class="fas fa-search"></i></label>
                     <input id="top-search-input" type="text" class="search-input" placeholder="Search...">
@@ -74,7 +76,9 @@
                 </form>
             </div>
 
-            <div class="image-container"></div>
+            <div class="image-container" style="background-image: var(--hero-image)">
+
+            </div>
         </section>
 
         <section class="stats-container">
