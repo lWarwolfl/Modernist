@@ -20,7 +20,7 @@
     position: relative;
     text-align: center;
     height: 100%;
-    width: calc(100% - 320px);
+    width: calc(100% - 300px);
 }
 .top-nav .link{
     display: inline-block;
@@ -31,11 +31,11 @@
     color: var(--font-color);
     background-color: transparent;
     padding: 5px;
-    margin: 0 15px;
+    margin: 0 12px;
     border-radius: 20px;
 }
 .top-nav .link:hover{
-    margin: 0 8px;
+    margin: 0 5px;
     padding: 12px;
     background-color: var(--lighter-color);
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
@@ -64,7 +64,7 @@
 .top-nav .search-bar{
     position: absolute;
     display: inline-block;
-    right: calc(50% - 280px);
+    right: calc(50% - 267px);
     width: 0;
     height: 40px;
     border-radius: 20px;
@@ -102,7 +102,7 @@
     font-size: 14px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     body .top-nav{
         display: none;
     }

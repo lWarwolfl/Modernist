@@ -16,10 +16,6 @@
     width: 25%;
     height: 150px;
 }
-.footer-part.logo{
-    align-items: center;
-    justify-content: center;
-}
 .footer-part-title{
     float: left;
     width: 100%;
@@ -94,10 +90,6 @@
     text-align: center;
     color: var(--font-color);
 }
-.footer-title.top{
-    width: 100%;
-    text-align: center;
-}
 .footer-submit-bar{
     position: relative;
     display: inline-block;
@@ -163,7 +155,7 @@
     background-color: var(--body-color);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .footer-box {
         padding: 30px 0 60px 0;
     }
@@ -179,6 +171,9 @@
     }
     .footer-submit-bar{
         width: 90%;
+    }
+    .footer-box{
+        padding-bottom: 150px;
     }
 }
 @media screen and (max-width: 600px) {

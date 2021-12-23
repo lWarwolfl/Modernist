@@ -47,7 +47,7 @@ textarea{
 }
 .logo-box{
     position: relative;
-    width: 220px;
+    width: 200px;
     height: 40px;
 }
 .logo-box.top{
@@ -71,7 +71,7 @@ textarea{
 }
 .logo-name{
     float: right;
-    width: 170px;
+    width: 150px;
     height: 40px;
     line-height: 40px;
     font-family: var(--font);
@@ -89,7 +89,7 @@ textarea{
     top: 0;
     width: 100%;
     font-size: 26px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: var(--opposite-font-color);
     text-align: center;
     z-index: 100;
@@ -97,7 +97,7 @@ textarea{
 .logo-box:hover .logo-animator{
     width: 100%;
     box-shadow: 0 4px 6px -2px var(--box-shadow-color);
-    background-position: 135% 100%;
+    background-position: 134% 100%;
 }
 body .screen-fix{
     position: relative;

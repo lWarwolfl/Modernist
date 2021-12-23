@@ -84,7 +84,7 @@
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .category-card{
         width: calc((100% - 20px)/2);
         padding-bottom: calc((100% - 20px)/2);

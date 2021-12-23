@@ -42,9 +42,31 @@
 </head>
 <body class="hidden">
 <header class="header-box">
-    <nav class="mobile-nav-bar">
-
-    </nav>
+    <div class="mobile-nav-bar-container flex row center">
+        <nav class="mobile-nav-bar">
+            <a class="link">
+                <i class="fas fa-home icon"></i>
+                <span class="name">Home</span>
+            </a>
+            <a href="#popular" class="link">
+                <i class="fas fa-newspaper icon"></i>
+                <span class="name">Popular</span>
+            </a>
+            <a id="mobile-toggle-theme" onclick="toggle_theme()" class="link">
+                <i class="fas fa-sun icon"></i>
+                <span class="name">Theme</span>
+            </a>
+            <a id="mobile-search-expand" class="link" onclick="expand_search_mobile()">
+                <i class="fas fa-search icon"></i>
+                <span class="name">Search</span>
+            </a>
+            <form id="mobile-search-bar" class="search-bar">
+                <label id="mobile-search-button" class="search-button"><i class="fas fa-search"></i></label>
+                <input id="mobile-search-input" type="text" class="search-input" placeholder="Search...">
+                <span id="mobile-search-close" class="search-button close"><i class="fas fa-times"></i></span>
+            </form>
+        </nav>
+    </div>
 
     <div class="screen-fix flex column center">
         <section class="nav-box home">
