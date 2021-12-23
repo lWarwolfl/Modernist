@@ -178,19 +178,14 @@ body .flex.row.center{
 .second-color-text{
     color: var(--second-color);
 }
-.title-border-first-color{
+.title-border{
     display: block;
     margin-bottom: 5px;
-    width: 80px;
-    height: 0;
-    border-bottom: 2px solid var(--first-color);
-}
-.title-border-second-color{
-    display: block;
-    margin-bottom: 5px;
-    width: 80px;
-    height: 0;
-    border-bottom: 2px solid var(--second-color);
+    width: 60px;
+    height: 8px;
+    background-image: var(--gradient);
+    background-size: 200% 200%;
+    background-position: 20% 100%;
 }
 
 @media screen and (max-width: 1366px) {

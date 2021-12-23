@@ -1,0 +1,22 @@
+:root{
+    --gradient: linear-gradient(90deg, #45e690 0%, #e6db45 150%);
+    --first-color: #45e690;
+    --second-color: #e6e045;
+    --hero-image: url('image/svg/hero-image-45e690-e6e045.svg');
+}
+body.light{
+    --light-color: #d9ffeb;
+    --light-hover-color: #c2ffde;
+    --lighter-color: #ebfff4;
+    --overlay-color-solid: rgba(235, 255, 244, 0.8);
+    --overlay-color: rgba(235, 255, 244, 0.4);
+    --very-light-color: #f5fffa;
+}
+body.dark{
+    --light-color: #2b332f;
+    --light-hover-color: #3a4d43;
+    --lighter-color: #2f3331;
+    --overlay-color-solid: rgba(47, 51, 49, 0.8);
+    --overlay-color: rgba(47, 51, 49, 0.4);
+    --very-light-color: #313332;
+}

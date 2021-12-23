@@ -1,0 +1,22 @@
+:root{
+    --gradient: linear-gradient(90deg, #00dbde 0%, #e600ff 150%);
+    --first-color: #00dbde;
+    --second-color: #e600ff;
+    --hero-image: url('image/svg/hero-image-00dbde-e600ff.svg');
+}
+body.light{
+    --light-color: #d9feff;
+    --light-hover-color: #c2feff;
+    --lighter-color: #ebffff;
+    --overlay-color-solid: rgba(235, 255, 255, 0.8);
+    --overlay-color: rgba(235, 255, 255, 0.4);
+    --very-light-color: #f5ffff;
+}
+body.dark{
+    --light-color: #2b3333;
+    --light-hover-color: #3a4c4d;
+    --lighter-color: #2f3333;
+    --overlay-color-solid: rgba(47, 51, 51, 0.8);
+    --overlay-color: rgba(47, 51, 51, 0.4);
+    --very-light-color: #313333;
+}

@@ -98,6 +98,7 @@
     height: min-content;
 }
 .hero-box .image-container{
+    position: relative;
     float: left;
     width: 50%;
     height: 300px;
@@ -106,8 +107,9 @@
     background-repeat: no-repeat;
 }
 .hero-box .image-container svg{
+    height: 300px;
+    width: 330px;
     float: right;
-    height: 100%;
 }
 .hero-box .title{
     width: 100%;
@@ -198,6 +200,7 @@
     .hero-box .image-container{
         width: 100%;
         background-position: center;
+        text-align: center;
     }
     .hero-box .image-container svg{
         float: none;

@@ -1,0 +1,19 @@
+:root{
+    --font: "Roboto";
+}
+body.light{
+    --body-color: #FaFaFa;
+    --box-shadow-color: #aaaaaa;
+    --dark-box-shadow-color: #444444;
+    --font-color: #222222;
+    --opposite-font-color: #ffffff;
+    --top-bottom-box-color: #ffffff;
+}
+body.dark{
+    --body-color: #282828;
+    --box-shadow-color: #222222;
+    --dark-box-shadow-color: #444444;
+    --font-color: #ffffff;
+    --opposite-font-color: #ffffff;
+    --top-bottom-box-color: #222222;
+}

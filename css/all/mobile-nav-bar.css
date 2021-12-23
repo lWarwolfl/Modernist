@@ -1,0 +1,12 @@
+.mobile-nav-bar{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: calc(100% - 80px);
+    height: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--overlay-color-solid);
+    box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+    z-index: 100000;
+}

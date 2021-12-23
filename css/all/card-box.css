@@ -68,7 +68,7 @@
     background-color: var(--second-color);
 }
 .card-box .category-tag:hover{
-    background-color: var(--lighter-color);
+    background-color: var(--light-hover-color);
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
 .card-box .button{

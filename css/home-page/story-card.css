@@ -136,7 +136,7 @@
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
 }
 .story-card .button-tag:hover{
-    background-color: var(--light-color);
+    background-color: var(--light-hover-color);
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
 }
 .story-card .button-tag svg{
