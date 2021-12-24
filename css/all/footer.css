@@ -10,6 +10,13 @@
     background-color: transparent;
     box-shadow: none;
 }
+.footer-box.has-wave{
+    margin-top: 50px;
+    box-shadow: none;
+}
+.footer-box.has-wave .wave{
+    display: unset;
+}
 .footer-part{
     float: left;
     display: inline-block;

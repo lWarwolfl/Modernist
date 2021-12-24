@@ -11,6 +11,13 @@
     background-color: transparent;
     box-shadow: none;
 }
+.header-box.has-wave{
+    margin-bottom: 50px;
+    box-shadow: none;
+}
+.header-box.has-wave .wave{
+    display: unset;
+}
 .header-box .stats-container{
     width: 100%;
     height: min-content;
@@ -105,6 +112,7 @@
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
+    background-image: var(--hero-image);
 }
 .hero-box .image-container svg{
     height: 300px;

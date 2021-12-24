@@ -2,7 +2,7 @@
     --gradient: linear-gradient(90deg, #ff3cac 0%, #784ba0 150%);
     --first-color: #ff3cac;
     --second-color: #784ba0;
-    --hero-image: url('image/svg/hero-image-ff3cac-784ba0.svg');
+    --hero-image: url('../../image/svg/hero-image-ff3cac-784ba0.svg');
 }
 body.light{
     --light-color: #ffd9d9;

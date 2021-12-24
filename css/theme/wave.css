@@ -1,0 +1,35 @@
+.wave{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.wave.top{
+    bottom: -80px;
+}
+.wave.bottom{
+    top: -80px;
+    transform: rotate(180deg);
+}
+.wave svg{
+    position: relative;
+    display: block;
+    height: 80px;
+}
+.wave.top svg{
+    filter: drop-shadow(0 1px 3px var(--box-shadow-color));
+}
+.wave.bottom svg{
+    filter: drop-shadow(0 -1px 3px var(--box-shadow-color));
+}
+.wave.simple svg{
+    width: 300%;
+}
+.wave.normal svg{
+    width: 100%;
+}
+.wave .shape-fill{
+    fill: var(--top-bottom-box-color);
+}
