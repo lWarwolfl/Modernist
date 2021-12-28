@@ -11,7 +11,7 @@
     background-color: transparent;
     box-shadow: none;
 }
-.nav-box.no-box{
+body.no-box .nav-box{
     background-color: transparent;
     box-shadow: none;
 }

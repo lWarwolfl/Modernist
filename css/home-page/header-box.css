@@ -7,15 +7,15 @@
     box-shadow: 0 1px 2px -1px var(--box-shadow-color);
     margin-bottom: 20px;
 }
-.header-box.no-box{
+body.no-box .header-box{
     background-color: transparent;
     box-shadow: none;
 }
-.header-box.has-wave{
+body.has-wave .header-box{
     margin-bottom: 50px;
     box-shadow: none;
 }
-.header-box.has-wave .wave{
+body.has-wave .header-box .wave{
     display: unset;
 }
 .header-box .stats-container{
@@ -40,6 +40,9 @@
 }
 .header-box .stats:hover{
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
+}
+body.has-circle .header-box .stats{
+    background-color: var(--overlay-color-solid);
 }
 .header-box .stats:last-child{
     margin-right: 0;
@@ -95,6 +98,9 @@
     margin-top: 50px;
     background-color: var(--lighter-color);
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
+}
+body.has-circle .hero-box{
+    background-color: var(--overlay-color-solid);
 }
 .hero-box:hover{
     box-shadow: 0 4px 6px -1px var(--box-shadow-color);
@@ -203,7 +209,6 @@
     }
     .hero-box .text-container{
         width: 100%;
-        text-align: center;
     }
     .hero-box .image-container{
         width: 100%;

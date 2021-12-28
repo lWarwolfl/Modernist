@@ -6,15 +6,20 @@
     background-color: var(--top-bottom-box-color);
     box-shadow: 0 -1px 2px -1px var(--box-shadow-color);
 }
-.footer-box.no-box{
+.footer-box.preview{
+    min-height: 150px;
+    box-shadow: none;
+    background-color: transparent;
+}
+body.no-box .footer-box{
     background-color: transparent;
     box-shadow: none;
 }
-.footer-box.has-wave{
+body.has-wave .footer-box{
     margin-top: 50px;
     box-shadow: none;
 }
-.footer-box.has-wave .wave{
+body.has-wave .footer-box .wave{
     display: unset;
 }
 .footer-part{
@@ -160,6 +165,9 @@
     letter-spacing: 1px;
     color: var(--font-color);
     background-color: var(--body-color);
+}
+.copy-rights.preview{
+    background-color: transparent;
 }
 
 @media screen and (max-width: 950px) {

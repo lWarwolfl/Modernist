@@ -24,10 +24,10 @@
 .wave.bottom svg{
     filter: drop-shadow(0 -1px 3px var(--box-shadow-color));
 }
-.wave.simple svg{
+body.simple .wave svg{
     width: 300%;
 }
-.wave.normal svg{
+body.normal .wave svg{
     width: 100%;
 }
 .wave .shape-fill{

@@ -1,3 +1,6 @@
+body.has-circle .story-card{
+    background-color: var(--overlay-color-solid);
+}
 .story-card{
     float: left;
     display: inline-block;

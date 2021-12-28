@@ -1,3 +1,6 @@
+body.has-circle .team-card{
+    background-color: var(--overlay-color-solid);
+}
 .team-card{
     float: left;
     display: inline-block;

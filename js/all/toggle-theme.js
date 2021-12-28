@@ -1,4 +1,22 @@
+//splitting window location to store $_GET values inside a variable
+let parts = window.location.search.substr(1).split("&");
+let get = {};
+for (let i = 0; i < parts.length; i++) {
+    let temp = parts[i].split("=");
+    get[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
+}
 $(window).on('load',function (){
+    //set webpage color file
+    if (get['color'])
+    {
+        localStorage.setItem('color',get['color']);
+    }
+    else
+    {
+
+    }
+    $('#theme').replaceWith('<link id="theme" rel="stylesheet" href="css/theme/root-' + localStorage.getItem('color') + '.css">');
+
     let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
     let toggle_button = $('#toggle-theme');
     let toggle_icon = $('#toggle-theme i');
