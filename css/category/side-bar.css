@@ -12,6 +12,9 @@
     width: 100%;
     margin-top: 30px;
 }
+body.has-circle .information-card{
+    background-color: var(--overlay-color-solid);
+}
 .information-card{
     float: left;
     display: inline-block;
@@ -114,6 +117,9 @@
     font-size: 16px;
     color: var(--first-color);
     margin: 0 2px;
+}
+body.has-circle .category-bar{
+    background-color: var(--overlay-color-solid);
 }
 .category-bar{
     float: left;

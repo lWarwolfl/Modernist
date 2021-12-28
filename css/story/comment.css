@@ -1,3 +1,6 @@
+body.has-circle .comment{
+    background-color: var(--overlay-color-solid);
+}
 .comment{
     float: left;
     display: inline-block;

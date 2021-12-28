@@ -1,15 +1,16 @@
 //splitting window location to store $_GET values inside a variable
-let parts = window.location.search.substr(1).split("&");
-let get = {};
-for (let i = 0; i < parts.length; i++) {
-    let temp = parts[i].split("=");
-    get[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
+let settings = window.location.search.substr(1).split("&");
+let gets = {};
+for (let i = 0; i < settings.length; i++) {
+    let temp = settings[i].split("=");
+    gets[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
 }
 $(window).on('load',function (){
+    let body = $('body');
     //set webpage color file
-    if (get['color'])
+    if (gets['color'])
     {
-        localStorage.setItem('color',get['color']);
+        localStorage.setItem('color',gets['color']);
     }
     else
     {
@@ -17,11 +18,51 @@ $(window).on('load',function (){
     }
     $('#theme').replaceWith('<link id="theme" rel="stylesheet" href="css/theme/root-' + localStorage.getItem('color') + '.css">');
 
+    if (gets['box'])
+    {
+        localStorage.setItem('box',gets['box']);
+    }
+    else
+    {
+
+    }
+    if (localStorage.getItem('box') === 'no')
+    {
+        body.addClass('no-box')
+    }
+
+    if (gets['wave'])
+    {
+        localStorage.setItem('wave',gets['wave']);
+    }
+    else
+    {
+
+    }
+    if (localStorage.getItem('wave') !== 'none')
+    {
+        body.addClass('has-wave');
+        body.addClass(localStorage.getItem('wave'));
+    }
+
+    if (gets['circle'])
+    {
+        localStorage.setItem('circle',gets['circle']);
+    }
+    else
+    {
+
+    }
+    if (localStorage.getItem('circle') !== 'circle')
+    {
+        body.addClass('has-circle');
+        body.addClass(localStorage.getItem('circle'));
+    }
+
     let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
     let toggle_button = $('#toggle-theme');
     let toggle_icon = $('#toggle-theme i');
     let mobile_toggle_icon = $('#mobile-toggle-theme .icon');
-    let body = $('body');
 
     if (!localStorage.getItem('theme')){
         if (matched){

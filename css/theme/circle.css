@@ -3,7 +3,6 @@ body.has-circle .circle{
 }
 .circle{
     position: absolute;
-    z-index: -100;
     display: none;
     border-radius: 100%;
     box-shadow: 0 2px 4px -1px var(--box-shadow-color);
@@ -23,31 +22,47 @@ body.has-circle.second.circle{
     width: 200px;
     height: 200px;
 }
-circle.big{
+.circle.medium{
+    width: 350px;
+    height: 350px;
+}
+.circle.big{
     width: 500px;
     height: 500px;
 }
 .circle.top{
-    top: 0;
+    top: 100px;
 }
 .circle.bottom{
-    bottom: 0;
+    bottom: 100px;
 }
 .circle.small.vertical-center{
     top: calc(50% - 100px);
+}
+.circle.medium.vertical-center{
+    top: calc(50% - 175px);
 }
 .circle.big.vertical-center{
     top: calc(50% - 250px);
 }
 .circle.right{
-    right: 0;
+    right: 100px;
 }
 .circle.left{
-    left: 0;
+    left: 100px;
 }
 .circle.small.horizontal-center{
     left: calc(50% - 100px);
 }
+.circle.medium.horizontal-center{
+    left: calc(50% - 175px);
+}
 .circle.big.horizontal-center{
     left: calc(50% - 250px);
+}
+
+@media screen and (max-width: 1000px) {
+    body.has-circle .circle{
+        display: none;
+    }
 }

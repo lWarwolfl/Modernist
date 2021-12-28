@@ -17,7 +17,6 @@ let category = get['category'];
 if (!get['category']){
     category = 'Recent';
 }
-
 //preparing page according to category
 $.getJSON('js/category/card-data.json', function(data){
     for (let i = 0;i < data['card'].length;i++)
