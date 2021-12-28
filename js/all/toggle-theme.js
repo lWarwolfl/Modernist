@@ -5,58 +5,68 @@ for (let i = 0; i < settings.length; i++) {
     let temp = settings[i].split("=");
     gets[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
 }
+
 $(window).on('load',function (){
     let body = $('body');
-    //set webpage color file
-    if (gets['color'])
-    {
-        localStorage.setItem('color',gets['color']);
-    }
-    else
-    {
+    let setting = {};
+    //get customization setting from json file
+    $.getJSON('setting.json', function(data){
+        let setting = data['setting'];
+        set_setting(setting);
+    });
 
-    }
-    $('#theme').replaceWith('<link id="theme" rel="stylesheet" href="css/theme/root-' + localStorage.getItem('color') + '.css">');
+    function set_setting(setting){
+        //set webpage color file
+        if (gets['color'])
+        {
+            localStorage.setItem('color',gets['color']);
+        }
+        else
+        {
+            localStorage.setItem('color',setting['color']);
+        }
+        $('#theme').replaceWith('<link id="theme" rel="stylesheet" href="css/theme/root-' + localStorage.getItem('color') + '.css">');
 
-    if (gets['box'])
-    {
-        localStorage.setItem('box',gets['box']);
-    }
-    else
-    {
+        if (gets['box'])
+        {
+            localStorage.setItem('box',gets['box']);
+        }
+        else
+        {
+            localStorage.setItem('box',setting['box']);
+        }
+        if (localStorage.getItem('box') === 'no')
+        {
+            body.addClass('no-box');
+        }
 
-    }
-    if (localStorage.getItem('box') === 'no')
-    {
-        body.addClass('no-box')
-    }
+        if (gets['wave'])
+        {
+            localStorage.setItem('wave',gets['wave']);
+        }
+        else
+        {
+            localStorage.setItem('wave',setting['wave']);
+        }
+        if (localStorage.getItem('wave') !== 'none')
+        {
+            body.addClass('has-wave');
+            body.addClass(localStorage.getItem('wave'));
+        }
 
-    if (gets['wave'])
-    {
-        localStorage.setItem('wave',gets['wave']);
-    }
-    else
-    {
-
-    }
-    if (localStorage.getItem('wave') !== 'none')
-    {
-        body.addClass('has-wave');
-        body.addClass(localStorage.getItem('wave'));
-    }
-
-    if (gets['circle'])
-    {
-        localStorage.setItem('circle',gets['circle']);
-    }
-    else
-    {
-
-    }
-    if (localStorage.getItem('circle') !== 'circle')
-    {
-        body.addClass('has-circle');
-        body.addClass(localStorage.getItem('circle'));
+        if (gets['circle'])
+        {
+            localStorage.setItem('circle',gets['circle']);
+        }
+        else
+        {
+            localStorage.setItem('circle',setting['circle']);
+        }
+        if (localStorage.getItem('circle') !== 'none')
+        {
+            body.addClass('has-circle');
+            body.addClass(localStorage.getItem('circle'));
+        }
     }
 
     let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
