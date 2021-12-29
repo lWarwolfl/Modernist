@@ -179,20 +179,20 @@
                         <label for="box-yes" class="selection">Have box</label>
 
                         <input type="radio" name="box" id="box-no" value="no">
-                        <label for="box-no" class="selection">Floating</label>
+                        <label for="box-no" class="selection" onclick="$('#wave-none').prop('checked', true);">Floating</label>
                     </div>
 
                     <div class="customize-container">
-                        <span class="option">Waves</span>
+                        <span class="option">Waves (Header and footer must have box for this to work)</span>
 
                         <input type="radio" name="wave" id="wave-none" value="none" checked>
                         <label for="wave-none" class="selection">None</label>
 
                         <input type="radio" name="wave" id="wave-simple" value="simple">
-                        <label for="wave-simple" class="selection">Simple</label>
+                        <label for="wave-simple" class="selection" onclick="$('#box-yes').prop('checked', true);">Simple</label>
 
                         <input type="radio" name="wave" id="wave-normal" value="normal">
-                        <label for="wave-normal" class="selection">Normal</label>
+                        <label for="wave-normal" class="selection" onclick="$('#box-yes').prop('checked', true);">Normal</label>
                     </div>
 
                     <div class="customize-container">

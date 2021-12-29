@@ -8,32 +8,19 @@ for (let i = 0; i < settings.length; i++) {
 
 $(window).on('load',function (){
     let body = $('body');
-    let setting = {};
-    //get customization setting from json file
-    $.getJSON('setting.json', function(data){
-        let setting = data['setting'];
-        set_setting(setting);
-    });
+    set_setting();
 
-    function set_setting(setting){
+    function set_setting(){
         //set webpage color file
         if (gets['color'])
         {
             localStorage.setItem('color',gets['color']);
-        }
-        else
-        {
-            localStorage.setItem('color',setting['color']);
         }
         $('#theme').replaceWith('<link id="theme" rel="stylesheet" href="css/theme/root-' + localStorage.getItem('color') + '.css">');
 
         if (gets['box'])
         {
             localStorage.setItem('box',gets['box']);
-        }
-        else
-        {
-            localStorage.setItem('box',setting['box']);
         }
         if (localStorage.getItem('box') === 'no')
         {
@@ -44,10 +31,6 @@ $(window).on('load',function (){
         {
             localStorage.setItem('wave',gets['wave']);
         }
-        else
-        {
-            localStorage.setItem('wave',setting['wave']);
-        }
         if (localStorage.getItem('wave') !== 'none')
         {
             body.addClass('has-wave');
@@ -57,10 +40,6 @@ $(window).on('load',function (){
         if (gets['circle'])
         {
             localStorage.setItem('circle',gets['circle']);
-        }
-        else
-        {
-            localStorage.setItem('circle',setting['circle']);
         }
         if (localStorage.getItem('circle') !== 'none')
         {

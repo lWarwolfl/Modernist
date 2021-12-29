@@ -38,7 +38,7 @@
     height: min-content;
     padding: 30px 20px;
     border-radius: 20px;
-    text-align: center;
+    text-align: left;
     background-color: var(--overlay-color-solid);
     box-shadow: 0 2px 4px -1px var(--dark-box-shadow-color);
 }
@@ -51,7 +51,6 @@
     font-family: var(--font);
     font-weight: 700;
     font-size: 32px;
-    text-align: left;
     color: var(--font-color);
 }
 .hero-text .text{

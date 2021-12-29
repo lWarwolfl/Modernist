@@ -70,5 +70,7 @@ input[type=radio]:checked+label.selection{
     }
     .customize-container .option{
         width: 100%;
+        white-space: unset;
+        line-height: 24px;
     }
 }
