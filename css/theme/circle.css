@@ -12,10 +12,10 @@ body.has-circle.gradient .circle{
     background-position: center center;
     background-size: cover;
 }
-body.has-circle.first.circle{
+body.has-circle.first .circle{
     background-color: var(--first-color);
 }
-body.has-circle.second.circle{
+body.has-circle.second .circle{
     background-color: var(--second-color);
 }
 .circle.small{

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Modernist</title>
+    <title>Home - Modernist</title>
     <link rel="icon" type="image/x-icon" href="image/fav-icon/fav-icon.svg">
 
-    <!--css files loader-->
+    <!--css files-->
     <link rel="stylesheet" href="css/theme/main.css">
     <link id="theme" rel="stylesheet" href="css/theme/root-f7c025-fc840e.css">
     <link id="wave" rel="stylesheet" href="css/theme/wave.css">
@@ -16,40 +16,41 @@
     <link rel="stylesheet" href="css/all/top-nav.css">
     <link rel="stylesheet" href="css/all/footer.css">
     <link rel="stylesheet" href="css/all/mobile-nav-bar.css">
+    <link rel="stylesheet" href="css/home-page/header-box.css">
     <link rel="stylesheet" href="css/all/card-box.css">
-    <link rel="stylesheet" href="css/category/category-page.css">
-    <link rel="stylesheet" href="css/category/side-bar.css">
+    <link rel="stylesheet" href="css/home-page/category-card.css">
+    <link rel="stylesheet" href="css/home-page/team-card.css">
     <link rel="stylesheet" href="css/home-page/story-card.css">
 
     <!--jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
 
+    <!--fontawesome cdn-->
+    <script src="https://kit.fontawesome.com/23b8629dae.js" crossorigin="anonymous" defer></script>
+
     <!--js files-->
     <script src="js/all/toggle-theme.js" defer></script>
     <script src="js/all/search-field.js" defer></script>
     <script src="js/all/smooth-scroll.js" defer></script>
+    <script src="js/category/card-loader.js" defer></script>
     <script src="js/story/card-loader.js" defer></script>
+    <script src="js/team/card-loader.js" defer></script>
     <script src="js/story/show-tag.js" defer></script>
-    <script src="js/category/page-loader.js" defer></script>
-    <script src="js/all/category-bar.js" defer></script>
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" >
-
-    <!--fontawesome cdn-->
-    <script src="https://kit.fontawesome.com/23b8629dae.js" crossorigin="anonymous" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="hidden">
-<header class="nav-box flex column center">
+<header class="header-box">
     <div class="mobile-nav-bar-container flex row center">
         <nav class="mobile-nav-bar">
-            <a href="home.html" class="link">
+            <a class="link">
                 <i class="fas fa-home icon"></i>
                 <span class="name">Home</span>
             </a>
-            <a href="home.html#popular" class="link">
+            <a href="#popular" class="link">
                 <i class="fas fa-newspaper icon"></i>
                 <span class="name">Popular</span>
             </a>
@@ -69,26 +70,87 @@
         </nav>
     </div>
 
-    <div class="screen-fix">
-        <a href="index.html" class="logo-box top">
-            <div class="logo-animator"></div>
-            <div class="logo-name">Modernist</div>
-        </a>
-        <nav class="top-nav flex row center">
-            <a class="link" href="home.html">Home</a>
-            <a class="link" href="#popular">Popular</a>
-            <a class="link" href="home.html#story">Categories</a>
-            <a class="link" href="home.html#team">Our team</a>
-            <a class="link" href="#contact">Contact us</a>
-            <a id="toggle-theme" class="link" onclick="toggle_theme()"><i class="fas fa-sun"></i></a>
-            <a id="top-search-expand" class="link" href="#" onclick="expand_search()"><i class="fas fa-search"></i></a>
-            <form id="top-search-bar" class="search-bar">
-                <label id="top-search-button" class="search-button"><i class="fas fa-search"></i></label>
-                <input id="top-search-input" type="text" class="search-input" placeholder="Search...">
-            </form>
-        </nav>
-        <a class="sign-button" href="#">LOGIN <i class="fas fa-sign-in-alt"></i></a>
+    <div class="screen-fix flex column center">
+        <section class="nav-box home">
+            <a href="index.html" class="logo-box top">
+                <span class="logo-animator"></span>
+                <h1 class="logo-name">Modernist</h1>
+            </a>
+            <nav class="top-nav flex row center">
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#popular">Popular</a>
+                <a class="link" href="#story">Categories</a>
+                <a class="link" href="#team">Our team</a>
+                <a class="link" href="#contact">Contact us</a>
+                <a id="toggle-theme" class="link" onclick="toggle_theme()"><i class="fas fa-sun"></i></a>
+                <a id="top-search-expand" class="link" onclick="expand_search()"><i class="fas fa-search"></i></a>
+                <form id="top-search-bar" class="search-bar">
+                    <label id="top-search-button" class="search-button"><i class="fas fa-search"></i></label>
+                    <input id="top-search-input" type="text" class="search-input" placeholder="Search...">
+                </form>
+            </nav>
+            <a class="sign-button" href="#">LOGIN <i class="fas fa-sign-in-alt"></i></a>
+        </section>
+
+        <section id="about" class="hero-box flex row left">
+            <div class="text-container">
+                <span class="title-border"></span>
+                <h1 class="title"><span class="first-color-text">Search</span> for anything intresting! </h1>
+                <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                <form id="hero-search-bar" class="search-bar">
+                    <label id="hero-search-button" class="search-button"><i class="fas fa-search"></i></label>
+                    <input id="hero-search-input" type="text" class="search-input" placeholder="Search...">
+                </form>
+            </div>
+
+            <div class="image-container">
+
+            </div>
+        </section>
+
+        <section class="stats-container">
+            <aside class="stats">
+                <div class="stats-icon-container">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="stats-number">12689
+                    <div class="stats-name">Visits</div>
+                </div>
+            </aside>
+
+            <aside class="stats">
+                <div class="stats-icon-container">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <div class="stats-number">1,142
+                    <div class="stats-name">Stories</div>
+                </div>
+            </aside>
+
+            <aside class="stats">
+                <div class="stats-icon-container">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="stats-number">5
+                    <div class="stats-name">Authors</div>
+                </div>
+            </aside>
+
+            <aside class="stats">
+                <div class="stats-icon-container">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stats-number">250
+                    <div class="stats-name">Users</div>
+                </div>
+            </aside>
+        </section>
     </div>
+
+    <div class="circle medium bottom left"></div>
 
     <div class="wave top">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -97,84 +159,32 @@
     </div>
 </header>
 
-<main class="main">
-    <section class="content-box hero">
-        <article class="screen-fix flex row left">
-            <aside class="side-bar desktop">
-                <div class="information-card">
-                    <div class="image"></div>
-                    <h2 class="title"></h2>
-                    <span class="title bold"></span>
-                    <p class="description"></p>
-                </div>
-
-                <div class="category-bar">
-                    <h2 class="title"><i class="fas fa-sitemap"></i> Categories</h2>
-                </div>
-            </aside>
-
-            <aside class="hero-image-box">
-                <div class="hero-image">
-                    <div class="hero-text">
-                        <span class="title-border"></span>
-                        <h1 class="title"></h1>
-                        <p class="text"></p>
-                        <form class="search-bar">
-                            <label class="search-button"><i class="fas fa-search"></i></label>
-                            <input type="text" class="search-input" placeholder="Search...">
-                        </form>
-                    </div>
-                </div>
-            </aside>
-        </article>
-
-        <article class="screen-fix flex row left">
-            <aside class="side-bar mobile">
-                <div class="information-card mobile">
-                    <div class="image-box">
-                        <div class="image"></div>
-                        <h2 class="title"></h2>
-                        <span class="title bold"></span>
-                    </div>
-                    <p class="description"></p>
-                </div>
-
-                <div class="category-bar-title">
-                    <h2 id="category-bar-mobile-expand" class="title" onclick="expand_category()"><i class="fas fa-sitemap category"></i> Categories<i class="fas fa-chevron-down expand"></i></h2>
-                    <div id="category-bar-mobile" class="category-bar mobile">
-
-                    </div>
-                </div>
-            </aside>
-        </article>
-
-        <div class="circle medium vertical-center left"></div>
-    </section>
-
-    <section id="stories" class="card-box">
-        <div class="circle big vertical-center right"></div>
-
-        <div class="screen-fix flex column center margin-20">
+<main>
+    <section id="story" class="card-box">
+        <div class="screen-fix flex column center">
             <header class="text-box">
                 <span class="title-border"></span>
-                <h2 id="category-title" class="title">Popular <span class="first-color-text">stories</span></h2>
+                <h1 class="title">Explore your <span class="first-color-text">interests</span></h1>
+                <p class="description">We have everything you need right here.</p>
             </header>
 
-            <article id="story-card-category-container" class="full-width all">
+            <article id="category-card-container" class="full-width">
 
             </article>
         </div>
+
+        <div class="circle medium bottom right"></div>
     </section>
 
     <section id="popular" class="card-box">
-        <div class="circle medium bottom left"></div>
+        <div class="circle big vertical-center left"></div>
 
         <div class="screen-fix flex column center margin-20">
             <header class="text-box">
                 <section class="text-separator">
                     <span class="title-border"></span>
                     <h2 class="title">Popular <span class="first-color-text">stories</span></h2>
-                    <p class="description">Popular stories based on user view come up in this section.</p>
+                    <p class="description">Popular stories based on user view come up in this section. for more stories click on see more.</p>
                 </section>
 
                 <ul class="category-box">
@@ -185,7 +195,25 @@
             <article id="story-card-container" class="full-width">
 
             </article>
+
+            <a href="category.html" class="button card-box-button">SEE MORE</a>
         </div>
+    </section>
+
+    <section id="team" class="card-box">
+        <div class="screen-fix flex column center">
+            <header class="text-box">
+                <span class="title-border"></span>
+                <h1 class="title">Our awesome <span class="first-color-text">team</span></h1>
+                <p class="description">Our team is made of professionals who will provide you with great stories and cool tips and tricks!</p>
+            </header>
+
+            <article id="team-card-container" class="full-width">
+
+            </article>
+        </div>
+
+        <div class="circle small bottom right"></div>
     </section>
 </main>
 
