@@ -6,6 +6,7 @@ body.light{
     --box-shadow-color: #aaaaaa;
     --dark-box-shadow-color: #444444;
     --font-color: #222222;
+    --light-font-color: #666666;
     --opposite-font-color: #ffffff;
     --top-bottom-box-color: #ffffff;
 }
@@ -14,6 +15,7 @@ body.dark{
     --box-shadow-color: #222222;
     --dark-box-shadow-color: #444444;
     --font-color: #ffffff;
+    --light-font-color: #aaaaaa;
     --opposite-font-color: #ffffff;
     --top-bottom-box-color: #222222;
 }

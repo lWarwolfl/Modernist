@@ -173,7 +173,7 @@ body.has-circle .hero-box{
     background-size: 200% 200%;
     background-position: 50% 100%;
 }
-.hero-box .search-input:hover{
+.hero-box .search-input:hover,.hero-box .search-input:focus{
     background-position: 111% 100%;
 }
 .hero-box .search-button{

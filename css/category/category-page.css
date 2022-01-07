@@ -92,7 +92,7 @@
     background-size: 200% 200%;
     background-position: 50% 100%;
 }
-.hero-text .search-input:hover{
+.hero-text .search-input:hover,.hero-text .search-input:focus{
     background-position: 111% 100%;
 }
 .hero-text .search-button{

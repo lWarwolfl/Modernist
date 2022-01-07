@@ -30,7 +30,7 @@
     height: min-content;
     margin-top: 20px;
     font-family: var(--font);
-    font-size: 17px;
+    font-size: 19px;
     color: var(--font-color);
 }
 .card-box .text-separator{

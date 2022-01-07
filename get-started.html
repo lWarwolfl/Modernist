@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get started</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        body .stackedit__html {
+            margin-bottom: 180px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 30px;
+            padding-right: 30px;
+            max-width: unset;
+        }
+        body .stackedit__toc{
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        body .stackedit__left{
+            background-color: rgba(0,0,0,.05);;
+        }
+        body pre>code {
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#getting-the-modernist-template-started">Getting started</a>
+<li><a href="#choosing-colors">1. Choosing colors</a>
+<ul>
+<li><a href="#a-editing-css-file-locationrecommended---faster-load-time">a. Editing css file location</a></li>
+<li><a href="#b-editing-setting.json-file">b. Editing setting.json file</a></li>
+</ul>
+</li>
+<li><a href="#configuring-customizations">2. Configuring customizations</a>
+<ul>
+<li><a href="#a-adding-classes-to-body-tag-inside-htmlrecommended---faster-load-time">a. Adding classes to body tag</a></li>
+<li><a href="#b-editing-setting.json-fileeasier">b. Editing setting.json file</a></li>
+</ul>
+</li>
+<li><a href="#fix-scriptoptional">3. fix script</a></li>
+<li><a href="#use-real-text-and-images-the-best-approach-is-to-use-an-admin-panel-and-server-side-language-but-it-is-possible-in-this-template-to-use-json-files">4. Use real text and images</a>
+<ul>
+<li><a href="#a-categories">a. Categories</a></li>
+<li><a href="#b-story">b. Story</a></li>
+<li><a href="#c-team">c. Team</a></li>
+</ul>
+</li>
+<li><a href="#the-template-is-all-set-and-ready-to-go">5. The template is all set and ready to go!</a></li>
+    <li><a href="#update">Updates</a></li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="getting-the-modernist-template-started">Getting the Modernist Template started</h1>
+<h1 id="choosing-colors">1. Choosing colors</h1>
+<h2 id="a-editing-css-file-locationrecommended---faster-load-time">a. Editing css file location(recommended - faster load time)</h2>
+<p><code>&lt;link id="theme" rel="stylesheet" href="css/theme/root-color-color.css"&gt;</code></p>
+<p>Edit this link in all pages and change the colors to your chosen colors.</p>
+<h2 id="b-editing-setting.json-file">b. Editing setting.json file</h2>
+<p><code>"color": "color-color",</code></p>
+<p>Open “setting.json” file with any text editor and change the “color” property to your chosen colors. Then save and close the file.</p>
+<blockquote>
+<p>The available hexadecimal colors are:</p>
+<p>“f7c025-fc840e”<br>
+“ffe53b-ff2525”<br>
+“fee140-fa709a”<br>
+“00dbde-e600ff”<br>
+“8bc6ec-9599e2”<br>
+“08aeea-2af598”<br>
+“45e690-e6e045”<br>
+“f4d03f-16a085”<br>
+“fdbb2d-8340ff”<br>
+“ff3cac-784ba0”<br>
+“2b86c5-ff3cac”<br>
+“ff9a8b-ff6a88”</p>
+</blockquote>
+<blockquote>
+<p>note: These are premade color files and entering other colors and combinations will not work.
+Although you can make your own color files by copying one of these files and editing the colors.
+but you should also edit the hero image illustrator file provided in the parchased file and export your own svg with desired colors to To be set as the background.</p>
+<p><code>--hero-image: url('../../image/svg/hero-image-your color-your color.svg');</code></p>
+<p>And then you would have to enter the address in your color file according to above.</p>
+</blockquote>
+<h1 id="configuring-customizations">2. Configuring customizations</h1>
+<h2 id="a-adding-classes-to-body-tag-inside-htmlrecommended---faster-load-time">a. Adding classes to body tag inside html(recommended - faster load time)</h2>
+<h3 id="header-and-footer-box">Header and footer box</h3>
+<p><code>&lt;body class="hidden no-box"&gt;</code></p>
+<p>Add “no-box” class to remove header and footer boxes to have a more unified page.</p>
+<h3 id="waves">Waves</h3>
+<p><code>&lt;body class="hidden has-wave"&gt;</code></p>
+<p>Add “has-wave” class to enable waves for header and footer boxes.</p>
+<blockquote>
+<p>note: You have to remove “no-box” class for this to work properly.</p>
+</blockquote>
+<p><code>&lt;body class="hidden has-wave normal"&gt;</code> (more complex waves)<br>
+<code>&lt;body class="hidden has-wave simple"&gt;</code> (simple wave)</p>
+<p>Then add “normal” class for more complex waves or “simple” class for a simple wave.</p>
+<h3 id="decorative-circles">Decorative circles</h3>
+<p><code>&lt;body class="hidden has-circle"&gt;</code></p>
+<p>Add “has-circle” class to enable circles to fill the empty spaces of the page.<br>
+note: This will not apply to the mobile version of the template.</p>
+<p><code>&lt;body class="hidden has-circle first"&gt;</code> (first color background)<br>
+<code>&lt;body class="hidden has-circle second"&gt;</code> (second color background)<br>
+<code>&lt;body class="hidden has-circle gradient"&gt;</code> (both colors as gradient background)</p>
+<p>To specify the color of circles use “first” or “second” class to apply the first or second color or use the “gradient” class to apply both as a gradient.</p>
+<blockquote>
+<p>note: You have to add these customization classes to bodies of all pages.</p>
+</blockquote>
+<h2 id="b-editing-setting.json-fileeasier">b. Editing setting.json file(easier)</h2>
+<h3 id="header-and-footer-box-1">Header and footer box</h3>
+<p><code>"box": "yes"</code> (have box - default)<br>
+<code>"box": "no"</code> (no box - floating)</p>
+<p>Open “setting.json” file with any text editor and change the box property to “no” to remove header and footer boxes to have a more unified page. Then save and close the file.</p>
+<h3 id="waves-1">Waves</h3>
+<p>This property adds waves for header and footer boxes.</p>
+<blockquote>
+<p>note: “box” property must be set to “yes” for this to work.</p>
+</blockquote>
+<p><code>"wave": "none"</code> (no waves - default)<br>
+<code>"wave": "normal"</code> (more complex waves)<br>
+<code>"wave": "simple"</code> (simple wave)</p>
+<p>Open “setting.json” file with any text editor and change the “wave” property to “normal” for more complex waves or “simple” for a simple wave. Then save and close the file.</p>
+<h3 id="decorative-circles-1">Decorative circles</h3>
+<p>This property enables circles to fill the empty spaces of the page.<br>
+note: This will not apply to the mobile version of the template.</p>
+<p><code>"circle": "none"</code> (no circles - default)<br>
+<code>"circle": "first"</code> (first color background)<br>
+<code>"circle": "second"</code> (second color background)<br>
+<code>"circle": "gradient"</code> (both colors as gradient background)</p>
+<p>To specify the color of circles Change “circle” property to “first” or “second” to apply the first or second color or to “gradient” to apply both as a gradient.</p>
+<h1 id="fix-scriptoptional">3. fix script(optional)</h1>
+<pre><code>`let setting = {};
+//get customization setting from json file
+$.getJSON(‘setting.json’, function(data){
+let setting = data[‘setting’];
+set_setting(setting);
+});
+function set_setting(setting){
+    //set webpage color file
+    localStorage.setItem('color',setting['color']);
+    $('#theme').replaceWith('&lt;link id="theme" rel="stylesheet" href="css/theme/root-' + localStorage.getItem('color') + '.css"&gt;');
+
+    //set box settings
+    localStorage.setItem('box',setting['box']);
+    if (localStorage.getItem('box') === 'no')
+    {
+        body.addClass('no-box');
+    }
+
+    //set wave settings
+    localStorage.setItem('wave',setting['wave']);
+    if (localStorage.getItem('wave') !== 'none')
+    {
+        body.addClass('has-wave');
+        body.addClass(localStorage.getItem('wave'));
+    }
+
+    //set circle settings
+    localStorage.setItem('circle',setting['circle']);
+    if (localStorage.getItem('circle') !== 'none')
+    {
+        body.addClass('has-circle');
+        body.addClass(localStorage.getItem('circle'));
+    }
+}`
+</code></pre>
+<p>If you used method “a” to apply color and customizations you have to delete this segment of code from “js/all/toggle-theme.js” for a faster load time.</p>
+<h1 id="use-real-text-and-images-the-best-approach-is-to-use-an-admin-panel-and-server-side-language-but-it-is-possible-in-this-template-to-use-json-files">4. Use real text and images (the best approach is to use an admin panel and server side language but it is possible in this template to use json files)</h1>
+<blockquote>
+<p>note: basic json knowledge is mandatory.</p>
+</blockquote>
+<h2 id="a-categories">a. Categories</h2>
+<p><code>{"category": "string","status": "string","title": "string","description": "string","count": "int","image": "jpeg","icon": "string"}</code></p>
+<p>Enter your category data in the “js/category/card-data.json” file according to this segment of this json code.</p>
+<blockquote>
+<p>note: Check below to understand where each entry is displayed and what is its purpose</p>
+<ul>
+<li>
+“category” : Category card - Category page information box(category name)
+</li>
+<li>
+“status” : Category page information box(a short information about category)
+</li>
+<li>
+“title” : Category page hero box(category title)
+</li>
+<li>
+“description” : Category page hero box(a short description for this category)
+</li>
+<li>
+“count” : Category card(all stories inside this category)
+</li>
+<li>
+“image” : Category card - Category page information box - Category page hero box(check below for more information)
+</li>
+<li>
+“icon” : Category card(must be a free fontawesone icon class name)
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>note: Images for category have four different sizes and are sorted in four different folders.<br>
+For adding pictures you have to crop and resize your images according to the specs below and name them exactly the same and inside the designated folders.<br>
+then you have to enter only the file name for the “image” property inside the json file.</p>
+<ul>
+<li>
+“image/categroy-icon” - small - square - 200*200px - max size 30kb recommended
+</li>
+<li>
+“image/categroy-square” - medium - square - 700*700px - max size 100kb recommended
+</li>
+<li>
+“image/categroy-original” - original - landscape - 800*xxxpx - max size 200kb recommended
+</li>
+<li>
+“image/categroy-high-res” - large - landscape - 1280*xxxxpx - max size 300kb recommended
+</li>
+</ul>
+</blockquote>
+<h2 id="b-story">b. Story</h2>
+<p><code>"category": ["string","string","string","string","string","string","string","string","string","string","string","string"],</code></p>
+<p>Enter your category data in the “js/story/card-data.json” file as above.</p>
+<blockquote>
+<p>note: Always keep “All” and “Recent” category.</p>
+</blockquote>
+<blockquote>
+<p>note: Always keep the categories in “js/story/card-data.json” synced with “js/category/card-data.json” file.</p>
+</blockquote>
+<blockquote>
+<p>note: These entries are displayed in category page and story page sidebars and you can make stories for each category according to below.</p>
+</blockquote>
+<p><code>"category 1": [ {"category": "string","time": "int min read - date","title": "string","text": "string","image": "jpeg","writer": {"name": "string","job": "string","image": "jpeg","time": "Posted on\n date","stars": int(1-5)},"story": "story full text"} ],</code></p>
+<p>Enter your story data in the “js/story/card-data.json” file as above.</p>
+<blockquote>
+note: Check below to understand where each entry is displayed and what is its purpose
+<ul>
+<li>
+“category 1” : a category from the category array that you want to make an story for it(must be lowercase)
+</li>
+<li>
+“category” : Story card tag(story category indicator)
+</li>
+<li>
+“time” : Story card(Upload time and read time indicator)
+</li>
+<li>
+“title” : Story card - Story page(story title)
+</li>
+<li>
+“text” : Story card(short description of story)
+</li>
+<li>
+“image” : Story card - Story page(check below for more information)
+</li>
+<li>
+“story” : Story page(full story text)
+</li>
+</ul>
+– “writer” : Story card - Story page information card(information about the story writer)
+– “name” : writer name
+– “job” : writer job or rank
+– “image” : writer image(check below for more information)
+– “time” : upload date
+– “stars” : writer stars count
+</blockquote>
+<blockquote>
+<p>note: Images for story have two different sizes and are sorted in two different folders.<br>
+For adding pictures you have to crop and resize your images according to the specs below and name them exactly the same and inside the designated folders.<br>
+then you have to enter only the file name for the “image” property inside the json file.</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>
+“image/story” - original - landscape - 800*xxxpx - max size 200kb recommended
+</li>
+<li>
+“image/story-high-res” - big - landscape - 1280*xxxxpx - max size 300kb recommended
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>note: Images for writers have only one size.<br>
+For adding pictures you have to crop and resize your image according to the specs below and put it inside the designated folder.<br>
+then you have to enter only the file name for the “image” property inside the json file.<br>
+“image/people” - small - square - 200*200px - max size 100kb recommended</p>
+</blockquote>
+<h2 id="c-team">c. Team</h2>
+<p><code>{"name": "string","job": "string","description": "string","stars": int(1-5),"image": "jpeg"}</code></p>
+<p>Enter your team data in the “js/team/card-data.json” file as above.</p>
+<blockquote>
+<p>note: Check below to understand where each entry is displayed and what is its purpose</p>
+<ul>
+<li>
+“name” : team member name
+</li>
+<li>
+“job” : team member job or rank
+</li>
+<li>
+“description” : short description of team member
+</li>
+<li>
+“image” : team member image(check below for more information)
+</li>
+<li>
+“stars” : team member stars count
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>note: Images for team have only one size.<br>
+For adding pictures you have to crop and resize your image according to the specs below and put it inside the designated folder. Then you have to enter only the file name for the “image” property inside the json file.</p>
+<ul>
+<li>“image/people” - small - square - 200*200px - max size 100kb recommended</li>
+</ul>
+</blockquote>
+<h1 id="the-template-is-all-set-and-ready-to-go">5. The template is all set and ready to go!</h1>
+
+        <h1 id="update">Updates</h1>
+        <p>Updates are underway for the modernist project. Check below to understand what each update will offer. each of them will take at least 1-2 weeks to be released.</p>
+        <ul>
+            <li>update v1.1: Login and sign up template - user and admin panel template</li>
+            <li>update v1.2: full working back-end of the template for panels (php - mysql) - full working search bars</li>
+        </ul>
+
+<p>For more support contact me using envato comments or contact the gmail below. Iam always available and I will review your data and get back to you as soon as possible.</p>
+<p>support gamil : <a href="mailto:lazyprogrammersea@gmail.com">lazyprogrammersea@gmail.com</a></p>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -100,7 +100,7 @@ body.no-box .nav-box{
     color: var(--font-color);
     background-color: var(--lighter-color);
 }
-.top-nav .search-input:hover{
+.top-nav .search-input:hover,.top-nav .search-input:focus{
     background-color: var(--light-hover-color);
 }
 .top-nav .search-button{

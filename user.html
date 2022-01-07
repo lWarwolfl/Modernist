@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Modernist - Login</title>
+  <link rel="icon" type="image/x-icon" href="image/fav-icon/fav-icon.svg">
+
+  <!--css files-->
+  <link rel="stylesheet" href="css/theme/main.css">
+  <link id="theme" rel="stylesheet" href="css/theme/root-f7c025-fc840e.css">
+  <link id="wave" rel="stylesheet" href="css/theme/wave.css">
+  <link id="circle" rel="stylesheet" href="css/theme/circle.css">
+  <link rel="stylesheet" href="css/all/main.css">
+  <link rel="stylesheet" href="css/all/top-nav.css">
+  <link rel="stylesheet" href="css/all/footer.css">
+  <link rel="stylesheet" href="css/sign/form.css">
+
+  <!--jquery cdn-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+  <!--fontawesome cdn-->
+  <script src="https://kit.fontawesome.com/23b8629dae.js" crossorigin="anonymous" defer></script>
+
+  <!--js files-->
+  <script src="js/all/toggle-theme.js" defer></script>
+  <script src="js/all/search-field.js" defer></script>
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="hidden no-box">
+<header class="nav-box flex column center">
+  <div class="screen-fix">
+    <a href="index.html" class="logo-box top">
+      <div class="logo-animator"></div>
+      <div class="logo-name">Modernist</div>
+    </a>
+    <nav class="top-nav flex row center">
+      <a class="link" href="home.html">Home</a>
+      <a class="link" href="category.html#popular">Popular</a>
+      <a class="link" href="home.html#story">Categories</a>
+      <a class="link" href="home.html#team">Our team</a>
+      <a class="link" href="#contact">Contact us</a>
+      <a id="toggle-theme" class="link" onclick="toggle_theme()"><i class="fas fa-sun"></i></a>
+      <a id="top-search-expand" class="link" href="#" onclick="expand_search()"><i class="fas fa-search"></i></a>
+      <form id="top-search-bar" class="search-bar">
+        <label id="top-search-button" class="search-button"><i class="fas fa-search"></i></label>
+        <input id="top-search-input" type="text" class="search-input" placeholder="Search...">
+      </form>
+    </nav>
+    <a class="sign-button" href="user.html">LOGIN <i class="fas fa-sign-in-alt"></i></a>
+  </div>
+</header>
+
+<main class="screen-fix flex column center">
+  <section class="text-box">
+    <span class="title-border"></span>
+    <h2 class="title">Enter your account</h2>
+    <!--Use your author panel to post stories check blog statistics and much more. You have all the tools you need!-->
+    <p class="description">Use your panel to explore favorite stories share your comments and ideas and much more. Welcome to modernist!</p>
+  </section>
+
+  <form class="form-container flex row center">
+    <section class="part">
+      <input name="user" type="text" placeholder="Username / Email">
+      <input name="password" type="password" placeholder="Password">
+      <button class="button">Login to your account<i class="fas fa-arrow-right"></i></button>
+    </section>
+
+    <section class="separator">/</section>
+
+    <section class="part">
+      <button class="light-button"><i class="fab fa-google"></i>Continue with google</button>
+      <button class="light-button"><i class="fab fa-facebook-square"></i>Continue with facebook</button>
+      <button class="light-button"><i class="fab fa-apple"></i>Continue with apple</button>
+    </section>
+  </form>
+
+  <section class="link-container">
+    <a href="#" class="link">Dont have an account yet?</a><br>
+    <a href="#" class="link">Forgot password?</a>
+  </section>
+</main>
+</body>
+</html>
